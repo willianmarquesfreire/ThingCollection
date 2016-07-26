@@ -9,6 +9,33 @@ package br.com.gumga.thingcollection.ThingCollection.domain.model;
  *
  * @author willian
  */
-public class Accessory {
+public class Accessory extends Thing{
+    
+    private String description;
+    private int amount;
+
+    public Accessory(String description, int amount) {
+        this.description = description;
+        this.amount = amount;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+    
+    
+    
     
 }

@@ -9,6 +9,18 @@ package br.com.gumga.thingcollection.ThingCollection.domain.model;
  *
  * @author willian
  */
-public class Thing {
+public abstract class Thing {
+    
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    
     
 }

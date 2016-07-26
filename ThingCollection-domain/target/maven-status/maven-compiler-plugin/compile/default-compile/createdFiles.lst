@@ -1,1 +1,10 @@
+br/com/gumga/thingcollection/ThingCollection/domain/model/Movement.class
+br/com/gumga/thingcollection/ThingCollection/domain/model/PublishingHouse.class
+br/com/gumga/thingcollection/ThingCollection/domain/model/Address.class
+br/com/gumga/thingcollection/ThingCollection/domain/model/Accessory.class
+br/com/gumga/thingcollection/ThingCollection/domain/model/Book.class
+br/com/gumga/thingcollection/ThingCollection/domain/model/Thing.class
+br/com/gumga/thingcollection/ThingCollection/domain/model/People.class
 br/com/gumga/thingcollection/ThingCollection/domain/model/Example.class
+br/com/gumga/thingcollection/ThingCollection/domain/model/Author.class
+br/com/gumga/thingcollection/ThingCollection/domain/model/Contatct.class
