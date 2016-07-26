@@ -1,0 +1,45 @@
+//Gerado automaticamente por plugin da www.gumga.com.br munif@munifgebara.com.br
+
+digraph G{
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+
+subgraph clusterbr_com_gumga_thingcollection_domain_model
+{
+label="br.com.gumga.thingcollection.domain.model";
+Contact [label = "{Contact|version:Integer\ldescription:String\lphone:String\l|}"]
+Author [label = "{Author|subjects:List\l|}"]
+People [label = "{People|version:Integer\lname:String\ldateBirth:Date\lemail:String\lwebsite:String\l|}"]
+Book [label = "{Book|version:Integer\ltitle:String\lisbn:String\lpages:int\lpublicationYear:Date\leditionNumber:String\l|}"]
+Movement [label = "{Movement|version:Integer\loutputDate:Date\l|}"]
+Address [label = "{Address|version:Integer\ldescription:String\laddress:GumgaAddress\l|}"]
+Loan [label = "{Loan|version:Integer\llimit:Date\ldevolutionDate:Calendar\l|}"]
+Transport [label = "{Transport|origin:Location\ldestination:Location\l|}"]
+Subject [label = "{Subject|version:Integer\ldescription:String\l|}"]
+Thing [label = "{Thing|version:Integer\ldescription:String\lcurrentLocation:Location\l|}"]
+Reservation [label = "{Reservation|expirationDate:Date\l|}"]
+Acessory [label = "{Acessory|description:String\lamount:int\l|}"]
+PublishingHouse [label = "{PublishingHouse|version:Integer\lname:String\lemail:String\lwebsite:String\l|}"]
+Location [label = "{Location|version:Integer\lname:String\lgps:GumgaGeoLocation\l|}"]
+
+}
+
+edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Transport -> Movement
+edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Acessory -> Thing
+edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Author -> People
+edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Reservation -> Movement
+edge [arrowhead = "none" headlabel = "1" taillabel = "*@"] Thing -> Location [label = "currentLocation"]
+
+}
+

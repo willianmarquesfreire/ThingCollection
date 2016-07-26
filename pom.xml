@@ -238,6 +238,20 @@
             </snapshots>
         </repository>
     </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>Gumga</id>
+            <name>Gumga Plugin Repository</name>
+            <url>https://raw.github.com/GUMGA/maven-plugin/mvn-repo/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>interval:60</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
     <build>
         <pluginManagement>
             <plugins>
@@ -259,12 +273,12 @@
             </plugins>
         </pluginManagement>
     </build>
-  <modules>
-    <module>ThingCollection-domain</module>
-    <module>ThingCollection-infrastructure</module>
-    <module>ThingCollection-application</module>
-    <module>ThingCollection-gateway</module>
-    <module>ThingCollection-api</module>
-    <module>ThingCollection-presentation</module>
-  </modules>
+    <modules>
+        <module>ThingCollection-domain</module>
+        <module>ThingCollection-infrastructure</module>
+        <module>ThingCollection-application</module>
+        <module>ThingCollection-gateway</module>
+        <module>ThingCollection-api</module>
+        <module>ThingCollection-presentation</module>
+    </modules>
 </project>
