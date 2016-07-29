@@ -23,6 +23,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import javax.persistence.PersistenceException;
 
 @Configuration
 @ComponentScan(basePackages = {"br.com.gumga.thingcollection", "gumga.framework"})
@@ -42,15 +43,15 @@ public class Application {
         GumgaQueryParserProvider.defaultMap = GumgaQueryParserProvider.getOracleLikeMap();
         HikariConfig config = new HikariConfig();
 
-//        config.setDataSourceClassName("com.mysql.jdbc.jdbc2.optional.MysqlDataSource");
-//        config.addDataSourceProperty("url", "jdbc:mysql://localhost:3306/ThingCollection?zeroDateTimeBehavior=convertToNull");
-//        config.addDataSourceProperty("user", "root");
-//        config.addDataSourceProperty("password", "senha");
-        config.setDataSourceClassName("org.h2.jdbcx.JdbcDataSource");
-        config.addDataSourceProperty("url", "jdbc:h2:mem:test;MVCC=true");
-        config.addDataSourceProperty("user", "sa");
-        config.addDataSourceProperty("password", "sa");
-        config.setMaximumPoolSize(20);
+        config.setDataSourceClassName("com.mysql.jdbc.jdbc2.optional.MysqlDataSource");
+        config.addDataSourceProperty("url", "jdbc:mysql://localhost:3306/ThingCollection?zeroDateTimeBehavior=convertToNull");
+        config.addDataSourceProperty("user", "root");
+        config.addDataSourceProperty("password", "senha");
+//        config.setDataSourceClassName("org.h2.jdbcx.JdbcDataSource");
+//        config.addDataSourceProperty("url", "jdbc:h2:mem:test;MVCC=true");
+//        config.addDataSourceProperty("user", "sa");
+//        config.addDataSourceProperty("password", "sa");
+//        config.setMaximumPoolSize(20);
 
         config.setIdleTimeout(30000L);
         config.setInitializationFailFast(true);
@@ -60,19 +61,19 @@ public class Application {
 
     @Bean
     @Autowired
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource) {
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource) throws PersistenceException{
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 
         Properties properties = new Properties();
-        properties.put("eclipselink.weaving", "false");
-        properties.put("hibernate.hbm2ddl.auto", "update");
-        properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
+//        properties.put("eclipselink.weaving", "false");
+//        properties.put("hibernate.hbm2ddl.auto", "update");
+//        properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
 
-        //properties.put("hibernate.hbm2ddl.auto", "update");
-        //properties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+        properties.put("hibernate.hbm2ddl.auto", "update");
+        properties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         properties.put("hibernate.ejb.naming_strategy", "org.hibernate.cfg.EJB3NamingStrategy");
-        //properties.put("hibernate.show_sql", "true");
-        //properties.put("hibernate.format_sql", "true");
+        properties.put("hibernate.show_sql", "true");
+        properties.put("hibernate.format_sql", "true");
         properties.put("hibernate.connection.charSet", "UTF-8");
         properties.put("hibernate.connection.characterEncoding", "UTF-8");
         properties.put("hibernate.connection.useUnicode", "true");
