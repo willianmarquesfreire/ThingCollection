@@ -1,0 +1,6 @@
+/ThingCollection-api/target/
+/ThingCollection-application/target/
+/ThingCollection-domain/target/
+/ThingCollection-gateway/target/
+/ThingCollection-presentation/target/
+/ThingCollection-infrastructure/target/

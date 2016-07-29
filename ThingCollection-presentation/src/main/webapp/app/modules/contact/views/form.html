@@ -1,0 +1,19 @@
+<form name="ContactForm" gumga-form novalidate>
+		
+	<div gumga-form-class="description">
+		<label gumga-translate-tag="contact.description">description</label>
+		<input gumga-error type="text" name="description" ng-model="contact.data.description"  class="form-control" />
+	</div>		
+	<div gumga-form-class="phone">
+		<label gumga-translate-tag="contact.phone">phone</label>
+		<input gumga-error type="text" name="phone" ng-model="contact.data.phone"  class="form-control" />
+	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="contact.list"
+            submit="contact.methods.put(contact.data)"
+            position="right"
+            valid="ContactForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

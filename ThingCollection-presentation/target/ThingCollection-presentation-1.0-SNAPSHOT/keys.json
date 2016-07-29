@@ -3,4 +3,17 @@
   "CUSTOMFIELDS",
   "TAGS",
   "CONFIGURATION"
+,"CRUD-Thing"
+,"CRUD-Location"
+,"CRUD-Acessory"
+,"CRUD-Book"
+,"CRUD-Reservation"
+,"CRUD-People"
+,"CRUD-Contact"
+,"CRUD-Address"
+,"CRUD-Movement"
+,"CRUD-Author"
+,"CRUD-Book"
+,"CRUD-PublishingHouse"
+,"CRUD-Transport"
 ]

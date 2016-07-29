@@ -1,0 +1,29 @@
+<form name="ThingForm" gumga-form novalidate>
+		
+	<div gumga-form-class="description">
+		<label gumga-translate-tag="thing.description">description</label>
+		<input gumga-error type="text" name="description" ng-model="thing.data.description"  class="form-control" />
+	</div>		
+
+	<div gumga-form-class="currentLocation">
+		<label gumga-translate-tag="thing.currentLocation">currentLocation</label>
+	    <gumga-many-to-one
+	            name="currentLocation"
+	            value="thing.data.currentLocation"
+	            search-method="location.methods.asyncSearch('name', param)"
+	            field="name"
+	            authorize-add="true"
+	            post-method="location.methods.asyncPost(value, 'name')">
+	    </gumga-many-to-one>
+	</div>
+
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="thing.list"
+            submit="thing.methods.put(thing.data)"
+            position="right"
+            valid="ThingForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

@@ -1,0 +1,47 @@
+	<div class="row">
+	
+	    <div class="col-md-5">
+	      <a ui-sref="author.insert" class="btn btn-primary">
+	        <i class="glyphicon glyphicon-plus"></i>Novo
+	      </a>
+	
+	      <button type="button" class="btn btn-danger" ng-click="author.methods.delete(selectedValues)" gumga-confirm="Deseja remover?">
+	        <i class="glyphicon glyphicon-trash"></i>Remover
+	      </button>
+	    </div>
+	
+	    <div class="col-md-7">
+	        <gumga-query search="author.methods.search(field,param)" advanced-search="author.methods.advancedSearch(param)" saved-filters="author.methods.getQuery(page)">
+	            <search-field label="name" field="name"></search-field>
+	            <search-field label="dateBirth" field="datebirth"></search-field>
+	            <search-field label="email" field="email"></search-field>
+	            <search-field label="website" field="website"></search-field>
+	            <search-field label="subjects" field="subjects"></search-field>
+	            <advanced-search-field  type="string"  label="name" field="name"></advanced-search-field>
+	            <advanced-search-field  type="date"  label="dateBirth" field="datebirth"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="email" field="email"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="website" field="website"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="subjects" field="subjects"></advanced-search-field>
+	        </gumga-query>
+	    </div>
+	</div>
+	
+	<div class="full-width-without-padding">
+	    <gumga-list sort="author.methods.sort(field, dir)"
+	           class="table-striped table-condensed"
+	            data="author.data"
+	            configuration="tableConfig">
+	    </gumga-list>
+	</div>
+
+	<uib-pagination ng-model="page"
+	            max-size="10"
+	            boundary-links="true"
+	            previous-text="‹"
+	            next-Text="›"
+	            first-text="«"
+	            last-text="»"
+	            items-per-page="author.pageSize"
+	            total-items="author.count"
+	            ng-change="author.methods.get(page)">
+	</uib-pagination>

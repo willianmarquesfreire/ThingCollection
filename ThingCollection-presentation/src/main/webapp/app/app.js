@@ -8,6 +8,19 @@ define(function(require) {
   require('app/apiLocations');
   require('app/modules/gumgatagdefinition/module');
   require('app/modules/gumgacustomfield/module');
+    require('app/modules/thing/module');
+    require('app/modules/location/module');
+    require('app/modules/acessory/module');
+    require('app/modules/book/module');
+    require('app/modules/reservation/module');
+    require('app/modules/people/module');
+    require('app/modules/contact/module');
+    require('app/modules/address/module');
+    require('app/modules/movement/module');
+    require('app/modules/author/module');
+    require('app/modules/book/module');
+    require('app/modules/publishinghouse/module');
+    require('app/modules/transport/module');
   //FIMREQUIRE
   angular.module('app.core', [
     'ui.router'
@@ -15,6 +28,19 @@ define(function(require) {
     ,'app.login'
     ,'app.gumgatagdefinition'
     ,'app.gumgacustomfield'
+        ,'app.thing'
+        ,'app.location'
+        ,'app.acessory'
+        ,'app.book'
+        ,'app.reservation'
+        ,'app.people'
+        ,'app.contact'
+        ,'app.address'
+        ,'app.movement'
+        ,'app.author'
+        ,'app.book'
+        ,'app.publishinghouse'
+        ,'app.transport'
   //FIMINJECTIONS
     ])
     .config(function($stateProvider, $urlRouterProvider, $httpProvider, $injector, GumgaAlertProvider) {
@@ -67,6 +93,110 @@ define(function(require) {
              url: '/gumgacustomfield',
              templateUrl: 'app/modules/gumgacustomfield/views/base.html'
         })
+        .state('thing', {
+        data: {
+            id: 1
+        }, 
+            url: '/thing',
+            templateUrl: 'app/modules/thing/views/base.html'
+        })
+
+        .state('location', {
+        data: {
+            id: 1
+        }, 
+            url: '/location',
+            templateUrl: 'app/modules/location/views/base.html'
+        })
+
+        .state('acessory', {
+        data: {
+            id: 1
+        }, 
+            url: '/acessory',
+            templateUrl: 'app/modules/acessory/views/base.html'
+        })
+
+        .state('book', {
+        data: {
+            id: 1
+        }, 
+            url: '/book',
+            templateUrl: 'app/modules/book/views/base.html'
+        })
+
+        .state('reservation', {
+        data: {
+            id: 1
+        }, 
+            url: '/reservation',
+            templateUrl: 'app/modules/reservation/views/base.html'
+        })
+
+        .state('people', {
+        data: {
+            id: 1
+        }, 
+            url: '/people',
+            templateUrl: 'app/modules/people/views/base.html'
+        })
+
+        .state('contact', {
+        data: {
+            id: 1
+        }, 
+            url: '/contact',
+            templateUrl: 'app/modules/contact/views/base.html'
+        })
+
+        .state('address', {
+        data: {
+            id: 1
+        }, 
+            url: '/address',
+            templateUrl: 'app/modules/address/views/base.html'
+        })
+
+        .state('movement', {
+        data: {
+            id: 1
+        }, 
+            url: '/movement',
+            templateUrl: 'app/modules/movement/views/base.html'
+        })
+
+        .state('author', {
+        data: {
+            id: 1
+        }, 
+            url: '/author',
+            templateUrl: 'app/modules/author/views/base.html'
+        })
+
+        .state('book', {
+        data: {
+            id: 1
+        }, 
+            url: '/book',
+            templateUrl: 'app/modules/book/views/base.html'
+        })
+
+        .state('publishinghouse', {
+        data: {
+            id: 1
+        }, 
+            url: '/publishinghouse',
+            templateUrl: 'app/modules/publishinghouse/views/base.html'
+        })
+
+        .state('transport', {
+        data: {
+            id: 1
+        }, 
+            url: '/transport',
+            templateUrl: 'app/modules/transport/views/base.html'
+        })
+
         //FIMROUTE
 
 

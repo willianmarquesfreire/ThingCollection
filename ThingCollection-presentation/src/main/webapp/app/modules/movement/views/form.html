@@ -1,0 +1,22 @@
+<form name="MovementForm" gumga-form novalidate>
+		
+	<div gumga-form-class="outputDate">
+		<label gumga-translate-tag="movement.outputDate">outputDate</label>
+		<p class="input-group">
+			<input type="text" name="outputDate" class="form-control"  uib-datepicker-popup="dd/MM/yyyy" ng-model="movement.data.outputDate" is-open="openedOutputDate" ng-click="openedOutputDate = !openedOutputDate" close-text="Close" />
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default" ng-click="openoutputDate()">
+					<i class="glyphicon glyphicon-calendar"></i>
+				</button>
+			</span>
+		</p>
+	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="movement.list"
+            submit="movement.methods.put(movement.data)"
+            position="right"
+            valid="MovementForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

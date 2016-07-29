@@ -1,0 +1,41 @@
+	<div class="row">
+	
+	    <div class="col-md-5">
+	      <a ui-sref="location.insert" class="btn btn-primary">
+	        <i class="glyphicon glyphicon-plus"></i>Novo
+	      </a>
+	
+	      <button type="button" class="btn btn-danger" ng-click="location.methods.delete(selectedValues)" gumga-confirm="Deseja remover?">
+	        <i class="glyphicon glyphicon-trash"></i>Remover
+	      </button>
+	    </div>
+	
+	    <div class="col-md-7">
+	        <gumga-query search="location.methods.search(field,param)" advanced-search="location.methods.advancedSearch(param)" saved-filters="location.methods.getQuery(page)">
+	            <search-field label="name" field="name"></search-field>
+	            <search-field label="gps" field="gps"></search-field>
+	            <advanced-search-field  type="string"  label="name" field="name"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="gps" field="gps"></advanced-search-field>
+	        </gumga-query>
+	    </div>
+	</div>
+	
+	<div class="full-width-without-padding">
+	    <gumga-list sort="location.methods.sort(field, dir)"
+	           class="table-striped table-condensed"
+	            data="location.data"
+	            configuration="tableConfig">
+	    </gumga-list>
+	</div>
+
+	<uib-pagination ng-model="page"
+	            max-size="10"
+	            boundary-links="true"
+	            previous-text="‹"
+	            next-Text="›"
+	            first-text="«"
+	            last-text="»"
+	            items-per-page="location.pageSize"
+	            total-items="location.count"
+	            ng-change="location.methods.get(page)">
+	</uib-pagination>

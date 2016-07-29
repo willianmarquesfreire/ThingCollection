@@ -1,0 +1,23 @@
+<form name="PublishingHouseForm" gumga-form novalidate>
+		
+	<div gumga-form-class="name">
+		<label gumga-translate-tag="publishinghouse.name">name</label>
+		<input gumga-error type="text" name="name" ng-model="publishinghouse.data.name"  class="form-control" />
+	</div>		
+	<div gumga-form-class="email">
+		<label gumga-translate-tag="publishinghouse.email">email</label>
+		<input gumga-error type="text" name="email" ng-model="publishinghouse.data.email"  class="form-control" />
+	</div>		
+	<div gumga-form-class="website">
+		<label gumga-translate-tag="publishinghouse.website">website</label>
+		<input gumga-error type="text" name="website" ng-model="publishinghouse.data.website"  class="form-control" />
+	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="publishinghouse.list"
+            submit="publishinghouse.methods.put(publishinghouse.data)"
+            position="right"
+            valid="PublishingHouseForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

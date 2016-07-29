@@ -1,0 +1,30 @@
+<form name="TransportForm" gumga-form novalidate>
+		
+	<div gumga-form-class="outputDate">
+		<label gumga-translate-tag="transport.outputDate">outputDate</label>
+		<p class="input-group">
+			<input type="text" name="outputDate" class="form-control"  uib-datepicker-popup="dd/MM/yyyy" ng-model="transport.data.outputDate" is-open="openedOutputDate" ng-click="openedOutputDate = !openedOutputDate" close-text="Close" />
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default" ng-click="openoutputDate()">
+					<i class="glyphicon glyphicon-calendar"></i>
+				</button>
+			</span>
+		</p>
+	</div>		
+	<div gumga-form-class="origin">
+		<label gumga-translate-tag="transport.origin">origin</label>
+		<input gumga-error type="text" name="origin" ng-model="transport.data.origin"  class="form-control" />
+	</div>		
+	<div gumga-form-class="destination">
+		<label gumga-translate-tag="transport.destination">destination</label>
+		<input gumga-error type="text" name="destination" ng-model="transport.data.destination"  class="form-control" />
+	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="transport.list"
+            submit="transport.methods.put(transport.data)"
+            position="right"
+            valid="TransportForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

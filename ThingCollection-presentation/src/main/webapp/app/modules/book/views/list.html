@@ -1,0 +1,47 @@
+	<div class="row">
+	
+	    <div class="col-md-5">
+	      <a ui-sref="book.insert" class="btn btn-primary">
+	        <i class="glyphicon glyphicon-plus"></i>Novo
+	      </a>
+	
+	      <button type="button" class="btn btn-danger" ng-click="book.methods.delete(selectedValues)" gumga-confirm="Deseja remover?">
+	        <i class="glyphicon glyphicon-trash"></i>Remover
+	      </button>
+	    </div>
+	
+	    <div class="col-md-7">
+	        <gumga-query search="book.methods.search(field,param)" advanced-search="book.methods.advancedSearch(param)" saved-filters="book.methods.getQuery(page)">
+	            <search-field label="title" field="title"></search-field>
+	            <search-field label="isbn" field="isbn"></search-field>
+	            <search-field label="pages" field="pages"></search-field>
+	            <search-field label="publicationYear" field="publicationyear"></search-field>
+	            <search-field label="editionNumber" field="editionnumber"></search-field>
+	            <advanced-search-field  type="string"  label="title" field="title"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="isbn" field="isbn"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="pages" field="pages"></advanced-search-field>
+	            <advanced-search-field  type="date"  label="publicationYear" field="publicationyear"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="editionNumber" field="editionnumber"></advanced-search-field>
+	        </gumga-query>
+	    </div>
+	</div>
+	
+	<div class="full-width-without-padding">
+	    <gumga-list sort="book.methods.sort(field, dir)"
+	           class="table-striped table-condensed"
+	            data="book.data"
+	            configuration="tableConfig">
+	    </gumga-list>
+	</div>
+
+	<uib-pagination ng-model="page"
+	            max-size="10"
+	            boundary-links="true"
+	            previous-text="‹"
+	            next-Text="›"
+	            first-text="«"
+	            last-text="»"
+	            items-per-page="book.pageSize"
+	            total-items="book.count"
+	            ng-change="book.methods.get(page)">
+	</uib-pagination>

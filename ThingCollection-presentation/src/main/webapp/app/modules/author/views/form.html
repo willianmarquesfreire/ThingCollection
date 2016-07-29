@@ -1,0 +1,38 @@
+<form name="AuthorForm" gumga-form novalidate>
+		
+	<div gumga-form-class="name">
+		<label gumga-translate-tag="author.name">name</label>
+		<input gumga-error type="text" name="name" ng-model="author.data.name"  class="form-control" />
+	</div>		
+	<div gumga-form-class="dateBirth">
+		<label gumga-translate-tag="author.dateBirth">dateBirth</label>
+		<p class="input-group">
+			<input type="text" name="dateBirth" class="form-control"  uib-datepicker-popup="dd/MM/yyyy" ng-model="author.data.dateBirth" is-open="openedDateBirth" ng-click="openedDateBirth = !openedDateBirth" close-text="Close" />
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default" ng-click="opendateBirth()">
+					<i class="glyphicon glyphicon-calendar"></i>
+				</button>
+			</span>
+		</p>
+	</div>		
+	<div gumga-form-class="email">
+		<label gumga-translate-tag="author.email">email</label>
+		<input gumga-error type="text" name="email" ng-model="author.data.email"  class="form-control" />
+	</div>		
+	<div gumga-form-class="website">
+		<label gumga-translate-tag="author.website">website</label>
+		<input gumga-error type="text" name="website" ng-model="author.data.website"  class="form-control" />
+	</div>		
+	<div gumga-form-class="subjects">
+		<label gumga-translate-tag="author.subjects">subjects</label>
+		<input gumga-error type="text" name="subjects" ng-model="author.data.subjects"  class="form-control" />
+	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="author.list"
+            submit="author.methods.put(author.data)"
+            position="right"
+            valid="AuthorForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

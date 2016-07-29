@@ -1,0 +1,33 @@
+<form name="ReservationForm" gumga-form novalidate>
+		
+	<div gumga-form-class="outputDate">
+		<label gumga-translate-tag="reservation.outputDate">outputDate</label>
+		<p class="input-group">
+			<input type="text" name="outputDate" class="form-control"  uib-datepicker-popup="dd/MM/yyyy" ng-model="reservation.data.outputDate" is-open="openedOutputDate" ng-click="openedOutputDate = !openedOutputDate" close-text="Close" />
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default" ng-click="openoutputDate()">
+					<i class="glyphicon glyphicon-calendar"></i>
+				</button>
+			</span>
+		</p>
+	</div>		
+	<div gumga-form-class="expirationDate">
+		<label gumga-translate-tag="reservation.expirationDate">expirationDate</label>
+		<p class="input-group">
+			<input type="text" name="expirationDate" class="form-control"  uib-datepicker-popup="dd/MM/yyyy" ng-model="reservation.data.expirationDate" is-open="openedExpirationDate" ng-click="openedExpirationDate = !openedExpirationDate" close-text="Close" />
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default" ng-click="openexpirationDate()">
+					<i class="glyphicon glyphicon-calendar"></i>
+				</button>
+			</span>
+		</p>
+	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="reservation.list"
+            submit="reservation.methods.put(reservation.data)"
+            position="right"
+            valid="ReservationForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

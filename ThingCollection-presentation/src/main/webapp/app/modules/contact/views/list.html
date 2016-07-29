@@ -1,0 +1,41 @@
+	<div class="row">
+	
+	    <div class="col-md-5">
+	      <a ui-sref="contact.insert" class="btn btn-primary">
+	        <i class="glyphicon glyphicon-plus"></i>Novo
+	      </a>
+	
+	      <button type="button" class="btn btn-danger" ng-click="contact.methods.delete(selectedValues)" gumga-confirm="Deseja remover?">
+	        <i class="glyphicon glyphicon-trash"></i>Remover
+	      </button>
+	    </div>
+	
+	    <div class="col-md-7">
+	        <gumga-query search="contact.methods.search(field,param)" advanced-search="contact.methods.advancedSearch(param)" saved-filters="contact.methods.getQuery(page)">
+	            <search-field label="description" field="description"></search-field>
+	            <search-field label="phone" field="phone"></search-field>
+	            <advanced-search-field  type="string"  label="description" field="description"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="phone" field="phone"></advanced-search-field>
+	        </gumga-query>
+	    </div>
+	</div>
+	
+	<div class="full-width-without-padding">
+	    <gumga-list sort="contact.methods.sort(field, dir)"
+	           class="table-striped table-condensed"
+	            data="contact.data"
+	            configuration="tableConfig">
+	    </gumga-list>
+	</div>
+
+	<uib-pagination ng-model="page"
+	            max-size="10"
+	            boundary-links="true"
+	            previous-text="‹"
+	            next-Text="›"
+	            first-text="«"
+	            last-text="»"
+	            items-per-page="contact.pageSize"
+	            total-items="contact.count"
+	            ng-change="contact.methods.get(page)">
+	</uib-pagination>

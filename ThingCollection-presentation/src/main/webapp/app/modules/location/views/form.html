@@ -1,0 +1,31 @@
+<form name="LocationForm" gumga-form novalidate>
+		
+	<div gumga-form-class="name">
+		<label gumga-translate-tag="location.name">name</label>
+		<input gumga-error type="text" name="name" ng-model="location.data.name"  class="form-control" />
+	</div>		
+
+	<div class="row">
+		<div class="col-md-12">
+			<label gumga-translate-tag="location.gps">gps</label>
+			<div gumga-form-class="gpslatitude">
+				<label gumga-translate-tag="gumga.latitude">Latitude</label>
+				<input gumga-error type="text" name="gpslatitude"  ng-model="location.data.gps.latitude" class="form-control"/>
+			</div>
+			<div gumga-form-class="gpslongitude">
+				<label gumga-translate-tag="gumga.longitude">Longitude</label>
+				<input gumga-error type="text" name="gpslongitude"  ng-model="location.data.gps.longitude" class="form-control" />
+			</div>
+			<a class="btn btn-default" ng-href="http://maps.google.com/maps?q={{location.data.gps.latitude + ',' + location.data.gps.longitude}}" target="_blank"> <p class="glyphicon glyphicon-globe"></p> GOOGLE MAPS</a>
+		</div>
+	</div>
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="location.list"
+            submit="location.methods.put(location.data)"
+            position="right"
+            valid="LocationForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

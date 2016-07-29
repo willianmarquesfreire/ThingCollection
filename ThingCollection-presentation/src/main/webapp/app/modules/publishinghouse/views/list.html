@@ -1,0 +1,43 @@
+	<div class="row">
+	
+	    <div class="col-md-5">
+	      <a ui-sref="publishinghouse.insert" class="btn btn-primary">
+	        <i class="glyphicon glyphicon-plus"></i>Novo
+	      </a>
+	
+	      <button type="button" class="btn btn-danger" ng-click="publishinghouse.methods.delete(selectedValues)" gumga-confirm="Deseja remover?">
+	        <i class="glyphicon glyphicon-trash"></i>Remover
+	      </button>
+	    </div>
+	
+	    <div class="col-md-7">
+	        <gumga-query search="publishinghouse.methods.search(field,param)" advanced-search="publishinghouse.methods.advancedSearch(param)" saved-filters="publishinghouse.methods.getQuery(page)">
+	            <search-field label="name" field="name"></search-field>
+	            <search-field label="email" field="email"></search-field>
+	            <search-field label="website" field="website"></search-field>
+	            <advanced-search-field  type="string"  label="name" field="name"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="email" field="email"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="website" field="website"></advanced-search-field>
+	        </gumga-query>
+	    </div>
+	</div>
+	
+	<div class="full-width-without-padding">
+	    <gumga-list sort="publishinghouse.methods.sort(field, dir)"
+	           class="table-striped table-condensed"
+	            data="publishinghouse.data"
+	            configuration="tableConfig">
+	    </gumga-list>
+	</div>
+
+	<uib-pagination ng-model="page"
+	            max-size="10"
+	            boundary-links="true"
+	            previous-text="‹"
+	            next-Text="›"
+	            first-text="«"
+	            last-text="»"
+	            items-per-page="publishinghouse.pageSize"
+	            total-items="publishinghouse.count"
+	            ng-change="publishinghouse.methods.get(page)">
+	</uib-pagination>

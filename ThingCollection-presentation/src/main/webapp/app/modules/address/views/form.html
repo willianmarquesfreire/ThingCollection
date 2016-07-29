@@ -1,0 +1,22 @@
+<form name="AddressForm" gumga-form novalidate>
+		
+	<div gumga-form-class="description">
+		<label gumga-translate-tag="address.description">description</label>
+		<input gumga-error type="text" name="description" ng-model="address.data.description"  class="form-control" />
+	</div>		
+
+	<div class="row">
+		<div class="col-md-12">
+			<gumga-address name="address" value="address.data.address" street="false"> </gumga-address>
+		</div>
+	</div>
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="address.list"
+            submit="address.methods.put(address.data)"
+            position="right"
+            valid="AddressForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

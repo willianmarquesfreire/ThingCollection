@@ -1,0 +1,37 @@
+<form name="AcessoryForm" gumga-form novalidate>
+		
+	<div gumga-form-class="description">
+		<label gumga-translate-tag="acessory.description">description</label>
+		<input gumga-error type="text" name="description" ng-model="acessory.data.description"  class="form-control" />
+	</div>		
+
+	<div gumga-form-class="currentLocation">
+		<label gumga-translate-tag="acessory.currentLocation">currentLocation</label>
+	    <gumga-many-to-one
+	            name="currentLocation"
+	            value="acessory.data.currentLocation"
+	            search-method="location.methods.asyncSearch('name', param)"
+	            field="name"
+	            authorize-add="true"
+	            post-method="location.methods.asyncPost(value, 'name')">
+	    </gumga-many-to-one>
+	</div>
+
+		
+	<div gumga-form-class="description">
+		<label gumga-translate-tag="acessory.description">description</label>
+		<input gumga-error type="text" name="description" ng-model="acessory.data.description"  class="form-control" />
+	</div>		
+	<div gumga-form-class="amount">
+		<label gumga-translate-tag="acessory.amount">amount</label>
+		<input gumga-error type="text" name="amount" ng-model="acessory.data.amount"  class="form-control" />
+	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="acessory.list"
+            submit="acessory.methods.put(acessory.data)"
+            position="right"
+            valid="AcessoryForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

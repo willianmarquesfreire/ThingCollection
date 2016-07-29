@@ -1,3 +1,15 @@
-br/com/gumga/thingcollection/ThingCollection/seed/Seed.class
+br/com/gumga/thingcollection/api/AcessoryAPI.class
+br/com/gumga/thingcollection/api/PeopleAPI.class
+br/com/gumga/thingcollection/api/AddressAPI.class
 br/com/gumga/thingcollection/ThingCollection/api/GumgaRegexApiOperationTranslator.class
+br/com/gumga/thingcollection/api/PublishingHouseAPI.class
 br/com/gumga/thingcollection/ThingCollection/api/GumgaRegexApiOperationTranslator$OperationExpression.class
+br/com/gumga/thingcollection/api/ReservationAPI.class
+br/com/gumga/thingcollection/api/TransportAPI.class
+br/com/gumga/thingcollection/api/AuthorAPI.class
+br/com/gumga/thingcollection/api/MovementAPI.class
+br/com/gumga/thingcollection/api/ThingAPI.class
+br/com/gumga/thingcollection/api/ContactAPI.class
+br/com/gumga/thingcollection/api/LocationAPI.class
+br/com/gumga/thingcollection/ThingCollection/seed/Seed.class
+br/com/gumga/thingcollection/api/BookAPI.class

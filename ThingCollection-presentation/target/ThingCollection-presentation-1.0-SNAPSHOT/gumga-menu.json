@@ -1,4 +1,251 @@
 [
+    {
+        "label": "Transport",
+        "URL": "transport.list",
+        "key": "CRUD-Transport",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "transport.insert",
+             "key": "CRUD-Transport",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "PublishingHouse",
+        "URL": "publishinghouse.list",
+        "key": "CRUD-PublishingHouse",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "publishinghouse.insert",
+             "key": "CRUD-PublishingHouse",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "Book",
+        "URL": "book.list",
+        "key": "CRUD-Book",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "book.insert",
+             "key": "CRUD-Book",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "Author",
+        "URL": "author.list",
+        "key": "CRUD-Author",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "author.insert",
+             "key": "CRUD-Author",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "Movement",
+        "URL": "movement.list",
+        "key": "CRUD-Movement",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "movement.insert",
+             "key": "CRUD-Movement",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "Address",
+        "URL": "address.list",
+        "key": "CRUD-Address",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "address.insert",
+             "key": "CRUD-Address",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "Contact",
+        "URL": "contact.list",
+        "key": "CRUD-Contact",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "contact.insert",
+             "key": "CRUD-Contact",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "People",
+        "URL": "people.list",
+        "key": "CRUD-People",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "people.insert",
+             "key": "CRUD-People",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "Reservation",
+        "URL": "reservation.list",
+        "key": "CRUD-Reservation",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "reservation.insert",
+             "key": "CRUD-Reservation",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "Book",
+        "URL": "book.list",
+        "key": "CRUD-Book",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "book.insert",
+             "key": "CRUD-Book",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "Acessory",
+        "URL": "acessory.list",
+        "key": "CRUD-Acessory",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "acessory.insert",
+             "key": "CRUD-Acessory",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "Location",
+        "URL": "location.list",
+        "key": "CRUD-Location",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "location.insert",
+             "key": "CRUD-Location",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
+    {
+        "label": "Thing",
+        "URL": "thing.list",
+        "key": "CRUD-Thing",
+        "icon": "glyphicon glyphicon-user",
+        "icon_color": "",
+        "imageUrl": "",
+        "imageWidth": "",
+        "imageHeight": "",
+        "filhos": [
+             {
+             "label": " Inserir ",
+             "URL": "thing.insert",
+             "key": "CRUD-Thing",
+             "icon": "glyphicon glyphicon-user",
+             "filhos": []
+             }
+         ]
+    },
 	{
   "label": "Home",
   "URL": "welcome",

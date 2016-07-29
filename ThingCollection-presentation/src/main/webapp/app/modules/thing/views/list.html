@@ -1,0 +1,41 @@
+	<div class="row">
+	
+	    <div class="col-md-5">
+	      <a ui-sref="thing.insert" class="btn btn-primary">
+	        <i class="glyphicon glyphicon-plus"></i>Novo
+	      </a>
+	
+	      <button type="button" class="btn btn-danger" ng-click="thing.methods.delete(selectedValues)" gumga-confirm="Deseja remover?">
+	        <i class="glyphicon glyphicon-trash"></i>Remover
+	      </button>
+	    </div>
+	
+	    <div class="col-md-7">
+	        <gumga-query search="thing.methods.search(field,param)" advanced-search="thing.methods.advancedSearch(param)" saved-filters="thing.methods.getQuery(page)">
+	            <search-field label="description" field="description"></search-field>
+	            <search-field label="currentLocation" field="currentlocation"></search-field>
+	            <advanced-search-field  type="string"  label="description" field="description"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="currentLocation" field="currentlocation"></advanced-search-field>
+	        </gumga-query>
+	    </div>
+	</div>
+	
+	<div class="full-width-without-padding">
+	    <gumga-list sort="thing.methods.sort(field, dir)"
+	           class="table-striped table-condensed"
+	            data="thing.data"
+	            configuration="tableConfig">
+	    </gumga-list>
+	</div>
+
+	<uib-pagination ng-model="page"
+	            max-size="10"
+	            boundary-links="true"
+	            previous-text="‹"
+	            next-Text="›"
+	            first-text="«"
+	            last-text="»"
+	            items-per-page="thing.pageSize"
+	            total-items="thing.count"
+	            ng-change="thing.methods.get(page)">
+	</uib-pagination>

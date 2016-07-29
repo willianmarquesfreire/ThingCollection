@@ -1,0 +1,34 @@
+<form name="PeopleForm" gumga-form novalidate>
+		
+	<div gumga-form-class="name">
+		<label gumga-translate-tag="people.name">name</label>
+		<input gumga-error type="text" name="name" ng-model="people.data.name"  class="form-control" />
+	</div>		
+	<div gumga-form-class="dateBirth">
+		<label gumga-translate-tag="people.dateBirth">dateBirth</label>
+		<p class="input-group">
+			<input type="text" name="dateBirth" class="form-control"  uib-datepicker-popup="dd/MM/yyyy" ng-model="people.data.dateBirth" is-open="openedDateBirth" ng-click="openedDateBirth = !openedDateBirth" close-text="Close" />
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default" ng-click="opendateBirth()">
+					<i class="glyphicon glyphicon-calendar"></i>
+				</button>
+			</span>
+		</p>
+	</div>		
+	<div gumga-form-class="email">
+		<label gumga-translate-tag="people.email">email</label>
+		<input gumga-error type="text" name="email" ng-model="people.data.email"  class="form-control" />
+	</div>		
+	<div gumga-form-class="website">
+		<label gumga-translate-tag="people.website">website</label>
+		<input gumga-error type="text" name="website" ng-model="people.data.website"  class="form-control" />
+	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="people.list"
+            submit="people.methods.put(people.data)"
+            position="right"
+            valid="PeopleForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>
