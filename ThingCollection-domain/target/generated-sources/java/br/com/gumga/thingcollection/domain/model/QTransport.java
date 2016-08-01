@@ -35,7 +35,7 @@ public class QTransport extends EntityPathBase<Transport> {
     public final QLocation origin;
 
     //inherited
-    public final DateTimePath<java.util.Date> outputDate = _super.outputDate;
+    public final DatePath<java.util.Date> outputDate = _super.outputDate;
 
     //inherited
     public final NumberPath<Integer> version = _super.version;

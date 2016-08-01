@@ -173,14 +173,6 @@ define(function(require) {
             templateUrl: 'app/modules/author/views/base.html'
         })
 
-        .state('book', {
-        data: {
-            id: 1
-        }, 
-            url: '/book',
-            templateUrl: 'app/modules/book/views/base.html'
-        })
-
         .state('publishinghouse', {
         data: {
             id: 1

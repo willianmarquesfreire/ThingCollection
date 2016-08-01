@@ -29,12 +29,13 @@ Transport [label = "{Transport|origin:Location\ldestination:Location\l|}"]
 Subject [label = "{Subject|version:Integer\ldescription:String\l|}"]
 Thing [label = "{Thing|version:Integer\ldescription:String\lcurrentLocation:Location\l|}"]
 Reservation [label = "{Reservation|expirationDate:Date\l|}"]
-Acessory [label = "{Acessory|description:String\lamount:int\l|}"]
+Acessory [label = "{Acessory|amount:int\l|}"]
 PublishingHouse [label = "{PublishingHouse|version:Integer\lname:String\lemail:String\lwebsite:String\l|}"]
 Location [label = "{Location|version:Integer\lname:String\lgps:GumgaGeoLocation\l|}"]
 }
 
 edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Author -> People
+edge [arrowhead = "none" headlabel = "*" taillabel = "1@"] Author -> Subject [label = "subjects"]
 edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Transport -> Movement
 edge [arrowhead = "none" headlabel = "1" taillabel = "*@"] Thing -> Location [label = "currentLocation"]
 edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Reservation -> Movement

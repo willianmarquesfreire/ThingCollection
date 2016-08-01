@@ -22,7 +22,9 @@ public class Loan extends GumgaModel<Long> {
 
     @Version
     private Integer version;
+    @Temporal(javax.persistence.TemporalType.DATE)
 	private Date limit;
+    @Temporal(javax.persistence.TemporalType.DATE)
 	private Calendar devolutionDate;
 
 	public Loan() {

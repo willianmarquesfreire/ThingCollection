@@ -21,7 +21,7 @@ public class QReservation extends EntityPathBase<Reservation> {
 
     public final QMovement _super = new QMovement(this);
 
-    public final DateTimePath<java.util.Date> expirationDate = createDateTime("expirationDate", java.util.Date.class);
+    public final DatePath<java.util.Date> expirationDate = createDate("expirationDate", java.util.Date.class);
 
     //inherited
     public final NumberPath<Long> id = _super.id;
@@ -30,7 +30,7 @@ public class QReservation extends EntityPathBase<Reservation> {
     public final ComparablePath<gumga.framework.domain.domains.GumgaOi> oi = _super.oi;
 
     //inherited
-    public final DateTimePath<java.util.Date> outputDate = _super.outputDate;
+    public final DatePath<java.util.Date> outputDate = _super.outputDate;
 
     //inherited
     public final NumberPath<Integer> version = _super.version;

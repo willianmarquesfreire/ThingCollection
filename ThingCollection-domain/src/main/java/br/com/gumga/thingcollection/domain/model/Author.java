@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 public class Author extends People {
 
+    @OneToMany
 	private List<Subject> subjects;
 
 	public Author() {

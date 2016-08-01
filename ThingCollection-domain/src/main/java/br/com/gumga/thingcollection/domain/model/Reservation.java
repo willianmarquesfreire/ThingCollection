@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 public class Reservation extends Movement {
 
+        @Temporal(javax.persistence.TemporalType.DATE)
 	private Date expirationDate;
 
 	public Reservation() {

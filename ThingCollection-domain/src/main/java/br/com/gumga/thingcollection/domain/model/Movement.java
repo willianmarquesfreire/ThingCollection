@@ -22,6 +22,7 @@ public class Movement extends GumgaModel<Long> {
 
     @Version
     private Integer version;
+    @Temporal(javax.persistence.TemporalType.DATE)
 	private Date outputDate;
 
 	public Movement() {

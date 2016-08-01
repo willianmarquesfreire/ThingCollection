@@ -29,7 +29,8 @@ public class QAcessory extends EntityPathBase<Acessory> {
     // inherited
     public final QLocation currentLocation;
 
-    public final StringPath description = createString("description");
+    //inherited
+    public final StringPath description;
 
     //inherited
     public final NumberPath<Long> id;
@@ -60,6 +61,7 @@ public class QAcessory extends EntityPathBase<Acessory> {
         super(type, metadata, inits);
         this._super = new QThing(type, metadata, inits);
         this.currentLocation = _super.currentLocation;
+        this.description = _super.description;
         this.id = _super.id;
         this.oi = _super.oi;
         this.version = _super.version;

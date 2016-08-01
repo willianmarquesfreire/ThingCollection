@@ -20,8 +20,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 public class People extends GumgaModel<Long> {
 
-    @Version
-    private Integer version;
+        @Version
+        private Integer version;
 	private String name;
 	private Date dateBirth;
 	private String email;

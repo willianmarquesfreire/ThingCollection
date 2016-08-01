@@ -26,7 +26,7 @@ public class QMovement extends EntityPathBase<Movement> {
     //inherited
     public final ComparablePath<gumga.framework.domain.domains.GumgaOi> oi = _super.oi;
 
-    public final DateTimePath<java.util.Date> outputDate = createDateTime("outputDate", java.util.Date.class);
+    public final DatePath<java.util.Date> outputDate = createDate("outputDate", java.util.Date.class);
 
     public final NumberPath<Integer> version = createNumber("version", Integer.class);
 

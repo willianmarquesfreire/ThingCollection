@@ -20,17 +20,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 public class Acessory extends Thing {
 
-	private String description;
 	private int amount;
 
 	public Acessory() {
-	}
-
-	public String getDescription() {
-		return this.description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
 	}
 
 	public int getAmount() {
