@@ -10,6 +10,8 @@ import org.hibernate.Hibernate;
 import br.com.gumga.thingcollection.application.repository.PeopleRepository;
 import br.com.gumga.thingcollection.domain.model.People;
 
+import br.com.gumga.thingcollection.domain.model.Contact;
+import br.com.gumga.thingcollection.domain.model.Address;
 
 @Service
 public class PeopleService extends GumgaService<People, Long> {
@@ -22,4 +24,15 @@ public class PeopleService extends GumgaService<People, Long> {
 		this.repository = repository;
 	}
 	
+	@Transactional
+	public People loadPeopleFat(Long id) {
+		People obj = repository.findOne(id);	
+		
+		Hibernate.initialize(obj.getContact());
+		Hibernate.initialize(obj.getContact());
+		Hibernate.initialize(obj.getAddress());
+		
+		
+		return obj;
+	}
 }

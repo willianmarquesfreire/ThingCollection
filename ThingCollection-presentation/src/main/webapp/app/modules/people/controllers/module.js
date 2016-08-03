@@ -5,6 +5,8 @@ define(function (require) {
 
     return angular
             .module('app.people.controllers', ['app.people.services','ui.router'])
+            .controller('ModalContactController', require('app/modules/people/controllers/ModalContactController'))
+            .controller('ModalAddressController', require('app/modules/people/controllers/ModalAddressController'))
             .controller('PeopleFormController', require('app/modules/people/controllers/PeopleFormController'))
             .controller('PeopleListController', require('app/modules/people/controllers/PeopleListController'));
 });

@@ -12,16 +12,26 @@
 	
 	    <div class="col-md-7">
 	        <gumga-query search="book.methods.search(field,param)" advanced-search="book.methods.advancedSearch(param)" saved-filters="book.methods.getQuery(page)">
+	            <search-field label="description" field="description"></search-field>
+	            <search-field label="currentLocation" field="currentlocation"></search-field>
 	            <search-field label="title" field="title"></search-field>
 	            <search-field label="isbn" field="isbn"></search-field>
 	            <search-field label="pages" field="pages"></search-field>
 	            <search-field label="publicationYear" field="publicationyear"></search-field>
 	            <search-field label="editionNumber" field="editionnumber"></search-field>
+	            <search-field label="publishingHouse" field="publishinghouse"></search-field>
+	            <search-field label="author" field="author"></search-field>
+	            <search-field label="subjects" field="subjects"></search-field>
+	            <advanced-search-field  type="string"  label="description" field="description"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="currentLocation" field="currentlocation"></advanced-search-field>
 	            <advanced-search-field  type="string"  label="title" field="title"></advanced-search-field>
 	            <advanced-search-field  type="string"  label="isbn" field="isbn"></advanced-search-field>
 	            <advanced-search-field  type="string"  label="pages" field="pages"></advanced-search-field>
 	            <advanced-search-field  type="date"  label="publicationYear" field="publicationyear"></advanced-search-field>
 	            <advanced-search-field  type="string"  label="editionNumber" field="editionnumber"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="publishingHouse" field="publishinghouse"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="author" field="author"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="subjects" field="subjects"></advanced-search-field>
 	        </gumga-query>
 	    </div>
 	</div>

@@ -16,6 +16,7 @@ define([], function() {
         	$scope.openedOutputDate = !$scope.openedOutputDate;
         };
 
+		$scope.transport.data.thing = $scope.transport.data.thing || [];
 		$scope.continue = {};
 	
 		$scope.transport.on('putSuccess',function(data){

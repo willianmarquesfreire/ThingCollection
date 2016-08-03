@@ -52,19 +52,19 @@ mvn br.com.gumga:gumgag:api -Dentidade=br.com.gumga.thingcollection.domain.model
 
 cd ThingCollection-presentation
 
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Thing
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Location
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Acessory
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Book
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Reservation
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.People
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Contact
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Address
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Movement
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Author
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Book
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.PublishingHouse
-mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Transport
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Thing -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Location -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Acessory -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Book -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Reservation -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.People -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Contact -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Address -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Movement -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Author -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Book -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.PublishingHouse -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Transport -Doverride=true
 
 mvn clean install
 

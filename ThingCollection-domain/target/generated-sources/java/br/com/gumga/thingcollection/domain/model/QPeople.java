@@ -7,6 +7,7 @@ import com.mysema.query.types.path.*;
 import com.mysema.query.types.PathMetadata;
 import javax.annotation.Generated;
 import com.mysema.query.types.Path;
+import com.mysema.query.types.path.PathInits;
 
 
 /**
@@ -20,6 +21,10 @@ public class QPeople extends EntityPathBase<People> {
     public static final QPeople people = new QPeople("people");
 
     public final gumga.framework.domain.QGumgaModel _super = new gumga.framework.domain.QGumgaModel(this);
+
+    public final ListPath<Address, QAddress> address = this.<Address, QAddress>createList("address", Address.class, QAddress.class, PathInits.DIRECT2);
+
+    public final ListPath<Contact, QContact> contact = this.<Contact, QContact>createList("contact", Contact.class, QContact.class, PathInits.DIRECT2);
 
     public final DateTimePath<java.util.Date> dateBirth = createDateTime("dateBirth", java.util.Date.class);
 

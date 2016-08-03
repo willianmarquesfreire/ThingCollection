@@ -10,6 +10,8 @@ import org.hibernate.Hibernate;
 import br.com.gumga.thingcollection.application.repository.BookRepository;
 import br.com.gumga.thingcollection.domain.model.Book;
 
+import br.com.gumga.thingcollection.domain.model.Author;
+import br.com.gumga.thingcollection.domain.model.Subject;
 
 @Service
 public class BookService extends GumgaService<Book, Long> {
@@ -22,4 +24,15 @@ public class BookService extends GumgaService<Book, Long> {
 		this.repository = repository;
 	}
 	
+	@Transactional
+	public Book loadBookFat(Long id) {
+		Book obj = repository.findOne(id);	
+		
+		Hibernate.initialize(obj.getAuthor());
+		Hibernate.initialize(obj.getAuthor());
+		Hibernate.initialize(obj.getSubjects());
+		
+		
+		return obj;
+	}
 }

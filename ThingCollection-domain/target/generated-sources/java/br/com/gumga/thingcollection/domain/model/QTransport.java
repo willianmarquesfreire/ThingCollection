@@ -38,6 +38,9 @@ public class QTransport extends EntityPathBase<Transport> {
     public final DatePath<java.util.Date> outputDate = _super.outputDate;
 
     //inherited
+    public final ListPath<Thing, QThing> thing = _super.thing;
+
+    //inherited
     public final NumberPath<Integer> version = _super.version;
 
     public QTransport(String variable) {

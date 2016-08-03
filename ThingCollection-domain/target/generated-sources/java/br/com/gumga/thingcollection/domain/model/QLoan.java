@@ -19,18 +19,26 @@ public class QLoan extends EntityPathBase<Loan> {
 
     public static final QLoan loan = new QLoan("loan");
 
-    public final gumga.framework.domain.QGumgaModel _super = new gumga.framework.domain.QGumgaModel(this);
+    public final QMovement _super = new QMovement(this);
 
     public final DatePath<java.util.Calendar> devolutionDate = createDate("devolutionDate", java.util.Calendar.class);
 
-    public final NumberPath<Long> id = createNumber("id", Long.class);
+    //inherited
+    public final NumberPath<Long> id = _super.id;
 
     public final DatePath<java.util.Date> limit = createDate("limit", java.util.Date.class);
 
     //inherited
     public final ComparablePath<gumga.framework.domain.domains.GumgaOi> oi = _super.oi;
 
-    public final NumberPath<Integer> version = createNumber("version", Integer.class);
+    //inherited
+    public final DatePath<java.util.Date> outputDate = _super.outputDate;
+
+    //inherited
+    public final ListPath<Thing, QThing> thing = _super.thing;
+
+    //inherited
+    public final NumberPath<Integer> version = _super.version;
 
     public QLoan(String variable) {
         super(Loan.class, forVariable(variable));

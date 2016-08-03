@@ -1,4 +1,5 @@
 package br.com.gumga.thingcollection.domain.model;
+
 import gumga.framework.domain.GumgaModel; //TODO RETIRAR OS IMPORTS DESNECESSÁRIOS
 import gumga.framework.domain.GumgaMultitenancy;
 import java.io.Serializable;
@@ -18,51 +19,89 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 //@Indexed
 @Audited
 @Entity
-public class Book extends GumgaModel<Long> {
+public class Book extends Thing {
 
-    @Version
-    private Integer version;
-	private String title;
-	private String isbn;
-	private int pages;
-	private Date publicationYear;
-	private String editionNumber;
 
-	public Book() {
-	}
+    private String title;
+    private String isbn;
+    private int pages;
+    private Date publicationYear;
+    private String editionNumber;
+    @ManyToOne
+    private PublishingHouse publishingHouse;
+    @ManyToMany
+    private List<Author> author;
+    @ManyToMany
+    private List<Subject> subjects;
 
-	public String getTitle() {
-		return this.title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    public Book() {
+    }
 
-	public String getIsbn() {
-		return this.isbn;
-	}
-	public void setIsbn(String isbn) {
-		this.isbn = isbn;
-	}
+    public String getTitle() {
+        return this.title;
+    }
 
-	public int getPages() {
-		return this.pages;
-	}
-	public void setPages(int pages) {
-		this.pages = pages;
-	}
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-	public Date getPublicationYear() {
-		return this.publicationYear;
-	}
-	public void setPublicationYear(Date publicationYear) {
-		this.publicationYear = publicationYear;
-	}
+    public String getIsbn() {
+        return this.isbn;
+    }
 
-	public String getEditionNumber() {
-		return this.editionNumber;
-	}
-	public void setEditionNumber(String editionNumber) {
-		this.editionNumber = editionNumber;
-	}
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public int getPages() {
+        return this.pages;
+    }
+
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
+    public Date getPublicationYear() {
+        return this.publicationYear;
+    }
+
+    public void setPublicationYear(Date publicationYear) {
+        this.publicationYear = publicationYear;
+    }
+
+    public String getEditionNumber() {
+        return this.editionNumber;
+    }
+
+    public void setEditionNumber(String editionNumber) {
+        this.editionNumber = editionNumber;
+    }
+
+    public PublishingHouse getPublishingHouse() {
+        return publishingHouse;
+    }
+
+    public void setPublishingHouse(PublishingHouse publishingHouse) {
+        this.publishingHouse = publishingHouse;
+    }
+
+    public List<Author> getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(List<Author> author) {
+        this.author = author;
+    }
+
+    public List<Subject> getSubjects() {
+        return subjects;
+    }
+
+    public void setSubjects(List<Subject> subjects) {
+        this.subjects = subjects;
+    }
+    
+
+    
+
 }

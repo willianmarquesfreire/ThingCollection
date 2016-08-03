@@ -1,4 +1,5 @@
 package br.com.gumga.thingcollection.domain.model;
+
 import gumga.framework.domain.GumgaModel; //TODO RETIRAR OS IMPORTS DESNECESSÁRIOS
 import gumga.framework.domain.GumgaMultitenancy;
 import java.io.Serializable;
@@ -20,16 +21,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 public class Author extends People {
 
-    @OneToMany
-	private List<Subject> subjects;
+    public Author() {
+    }
 
-	public Author() {
-	}
-
-	public List<Subject> getSubjects() {
-		return this.subjects;
-	}
-	public void setSubjects(List<Subject> subjects) {
-		this.subjects = subjects;
-	}
 }

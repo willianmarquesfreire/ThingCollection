@@ -1,0 +1,20 @@
+	<form name="Modal">
+	    <div class="modal-header">
+	        <h3 class="modal-title" gumga-translate-tag="contact.title"></h3>
+	    </div>
+	    <div class="modal-body" style="overflow: auto">
+		
+	<div gumga-form-class="description">
+		<label gumga-translate-tag="author.description">description</label>
+		<input gumga-error type="text" name="description" ng-model="author.data.description"  class="form-control" />
+	</div>		
+	<div gumga-form-class="phone">
+		<label gumga-translate-tag="author.phone">phone</label>
+		<input gumga-error type="text" name="phone" ng-model="author.data.phone"  class="form-control" />
+	</div>	    </div>
+	    <div class="clearfix"></div>
+	    <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" ng-click="ok(author.data)" ng-disabled="Modal.$invalid">OK</button>
+	        <button type="button" class="btn btn-warning" ng-click="cancel()">Cancel</button>
+	    </div>
+	</form>

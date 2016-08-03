@@ -10,6 +10,7 @@ import org.hibernate.Hibernate;
 import br.com.gumga.thingcollection.application.repository.TransportRepository;
 import br.com.gumga.thingcollection.domain.model.Transport;
 
+import br.com.gumga.thingcollection.domain.model.Thing;
 
 @Service
 public class TransportService extends GumgaService<Transport, Long> {
@@ -22,4 +23,15 @@ public class TransportService extends GumgaService<Transport, Long> {
 		this.repository = repository;
 	}
 	
+	@Transactional
+	public Transport loadTransportFat(Long id) {
+		Transport obj = repository.findOne(id);	
+		
+		Hibernate.initialize(obj.getThing());
+		Hibernate.initialize(obj.getThing());
+		Hibernate.initialize(obj.getThing());
+		
+		
+		return obj;
+	}
 }

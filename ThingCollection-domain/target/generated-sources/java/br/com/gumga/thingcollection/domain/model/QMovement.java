@@ -7,6 +7,7 @@ import com.mysema.query.types.path.*;
 import com.mysema.query.types.PathMetadata;
 import javax.annotation.Generated;
 import com.mysema.query.types.Path;
+import com.mysema.query.types.path.PathInits;
 
 
 /**
@@ -27,6 +28,8 @@ public class QMovement extends EntityPathBase<Movement> {
     public final ComparablePath<gumga.framework.domain.domains.GumgaOi> oi = _super.oi;
 
     public final DatePath<java.util.Date> outputDate = createDate("outputDate", java.util.Date.class);
+
+    public final ListPath<Thing, QThing> thing = this.<Thing, QThing>createList("thing", Thing.class, QThing.class, PathInits.DIRECT2);
 
     public final NumberPath<Integer> version = createNumber("version", Integer.class);
 

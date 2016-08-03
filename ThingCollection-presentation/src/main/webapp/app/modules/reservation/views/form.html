@@ -11,6 +11,18 @@
 			</span>
 		</p>
 	</div>		
+
+	<div class="full-width-without-padding">
+	    <label for="thing" gumga-translate-tag="reservation.thing"></label>
+	
+		<gumga-one-to-many
+		        children="reservation.data.thing"
+		        template-url="app/modules/movement/views/modalThing.html"
+		        displayable-property="description"
+		        controller="ModalThingController">
+		</gumga-one-to-many>
+	</div>
+		
 	<div gumga-form-class="expirationDate">
 		<label gumga-translate-tag="reservation.expirationDate">expirationDate</label>
 		<p class="input-group">

@@ -1,4 +1,5 @@
 package br.com.gumga.thingcollection.domain.model;
+
 import gumga.framework.domain.GumgaModel; //TODO RETIRAR OS IMPORTS DESNECESSÁRIOS
 import gumga.framework.domain.GumgaMultitenancy;
 import java.io.Serializable;
@@ -18,29 +19,32 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 //@Indexed
 @Audited
 @Entity
-public class Loan extends GumgaModel<Long> {
+public class Loan extends Movement {
 
-    @Version
-    private Integer version;
     @Temporal(javax.persistence.TemporalType.DATE)
-	private Date limit;
+    private Date limit;
     @Temporal(javax.persistence.TemporalType.DATE)
-	private Calendar devolutionDate;
+    private Calendar devolutionDate;
+    
 
-	public Loan() {
-	}
+    public Loan() {
+    }
 
-	public Date getLimit() {
-		return this.limit;
-	}
-	public void setLimit(Date limit) {
-		this.limit = limit;
-	}
+    public Date getLimit() {
+        return this.limit;
+    }
 
-	public Calendar getDevolutionDate() {
-		return this.devolutionDate;
-	}
-	public void setDevolutionDate(Calendar devolutionDate) {
-		this.devolutionDate = devolutionDate;
-	}
+    public void setLimit(Date limit) {
+        this.limit = limit;
+    }
+
+    public Calendar getDevolutionDate() {
+        return this.devolutionDate;
+    }
+
+    public void setDevolutionDate(Calendar devolutionDate) {
+        this.devolutionDate = devolutionDate;
+    }
+
+
 }

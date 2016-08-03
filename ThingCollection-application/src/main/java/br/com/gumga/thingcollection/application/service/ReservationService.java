@@ -10,6 +10,7 @@ import org.hibernate.Hibernate;
 import br.com.gumga.thingcollection.application.repository.ReservationRepository;
 import br.com.gumga.thingcollection.domain.model.Reservation;
 
+import br.com.gumga.thingcollection.domain.model.Thing;
 
 @Service
 public class ReservationService extends GumgaService<Reservation, Long> {
@@ -22,4 +23,14 @@ public class ReservationService extends GumgaService<Reservation, Long> {
 		this.repository = repository;
 	}
 	
+	@Transactional
+	public Reservation loadReservationFat(Long id) {
+		Reservation obj = repository.findOne(id);	
+		
+		Hibernate.initialize(obj.getThing());
+		Hibernate.initialize(obj.getThing());
+		
+		
+		return obj;
+	}
 }

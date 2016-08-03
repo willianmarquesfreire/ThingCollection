@@ -10,13 +10,13 @@ define([], function() {
     $scope.book.execute('get');
 
     $scope.tableConfig = {
-      columns: 'title ,button',
+      columns: 'description ,button',
       checkbox: true,
       columnsConfig: [{
-        name: 'title',
-        title: '<span gumga-translate-tag="book.title"> title </span>',
-        content: '{{$value.title }}',
-        sortField: 'title'
+        name: 'description',
+        title: '<span gumga-translate-tag="book.description"> description </span>',
+        content: '{{$value.description }}',
+        sortField: 'description'
       }, {
         name: 'button',
         title: ' ',

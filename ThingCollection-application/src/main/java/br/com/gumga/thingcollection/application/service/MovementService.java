@@ -10,6 +10,7 @@ import org.hibernate.Hibernate;
 import br.com.gumga.thingcollection.application.repository.MovementRepository;
 import br.com.gumga.thingcollection.domain.model.Movement;
 
+import br.com.gumga.thingcollection.domain.model.Thing;
 
 @Service
 public class MovementService extends GumgaService<Movement, Long> {
@@ -22,4 +23,13 @@ public class MovementService extends GumgaService<Movement, Long> {
 		this.repository = repository;
 	}
 	
+	@Transactional
+	public Movement loadMovementFat(Long id) {
+		Movement obj = repository.findOne(id);	
+		
+		Hibernate.initialize(obj.getThing());
+		
+		
+		return obj;
+	}
 }

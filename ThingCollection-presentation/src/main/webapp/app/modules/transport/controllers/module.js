@@ -5,6 +5,7 @@ define(function (require) {
 
     return angular
             .module('app.transport.controllers', ['app.transport.services','ui.router'])
+            .controller('ModalThingController', require('app/modules/transport/controllers/ModalThingController'))
             .controller('TransportFormController', require('app/modules/transport/controllers/TransportFormController'))
             .controller('TransportListController', require('app/modules/transport/controllers/TransportListController'));
 });

@@ -1,0 +1,30 @@
+	<form name="Modal">
+	    <div class="modal-header">
+	        <h3 class="modal-title" gumga-translate-tag="thing.title"></h3>
+	    </div>
+	    <div class="modal-body" style="overflow: auto">
+		
+	<div gumga-form-class="description">
+		<label gumga-translate-tag="transport.description">description</label>
+		<input gumga-error type="text" name="description" ng-model="transport.data.description"  class="form-control" />
+	</div>		
+
+	<div gumga-form-class="currentLocation">
+		<label gumga-translate-tag="transport.currentLocation">currentLocation</label>
+	    <gumga-many-to-one
+	            name="currentLocation"
+	            value="transport.data.currentLocation"
+	            search-method="location.methods.asyncSearch('name', param)"
+	            field="name"
+	            authorize-add="true"
+	            post-method="location.methods.asyncPost(value, 'name')">
+	    </gumga-many-to-one>
+	</div>
+
+	    </div>
+	    <div class="clearfix"></div>
+	    <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" ng-click="ok(transport.data)" ng-disabled="Modal.$invalid">OK</button>
+	        <button type="button" class="btn btn-warning" ng-click="cancel()">Cancel</button>
+	    </div>
+	</form>

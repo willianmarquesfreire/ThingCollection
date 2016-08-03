@@ -10,7 +10,19 @@
 				</button>
 			</span>
 		</p>
-	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+	</div>		
+
+	<div class="full-width-without-padding">
+	    <label for="thing" gumga-translate-tag="movement.thing"></label>
+	
+		<gumga-one-to-many
+		        children="movement.data.thing"
+		        template-url="app/modules/movement/views/modalThing.html"
+		        displayable-property="description"
+		        controller="ModalThingController">
+		</gumga-one-to-many>
+	</div>
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
     <gumga-form-buttons
             back="movement.list"
             submit="movement.methods.put(movement.data)"

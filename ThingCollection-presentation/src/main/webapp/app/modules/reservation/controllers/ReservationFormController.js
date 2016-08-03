@@ -21,6 +21,7 @@ define([], function() {
         	$scope.openedExpirationDate = !$scope.openedExpirationDate;
         };
 
+		$scope.reservation.data.thing = $scope.reservation.data.thing || [];
 		$scope.continue = {};
 	
 		$scope.reservation.on('putSuccess',function(data){

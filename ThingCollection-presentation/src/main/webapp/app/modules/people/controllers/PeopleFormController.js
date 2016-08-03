@@ -16,6 +16,8 @@ define([], function() {
         	$scope.openedDateBirth = !$scope.openedDateBirth;
         };
 
+		$scope.people.data.contact = $scope.people.data.contact || [];
+		$scope.people.data.address = $scope.people.data.address || [];
 		$scope.continue = {};
 	
 		$scope.people.on('putSuccess',function(data){

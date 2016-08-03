@@ -7,7 +7,6 @@ import com.mysema.query.types.path.*;
 import com.mysema.query.types.PathMetadata;
 import javax.annotation.Generated;
 import com.mysema.query.types.Path;
-import com.mysema.query.types.path.PathInits;
 
 
 /**
@@ -23,6 +22,12 @@ public class QAuthor extends EntityPathBase<Author> {
     public final QPeople _super = new QPeople(this);
 
     //inherited
+    public final ListPath<Address, QAddress> address = _super.address;
+
+    //inherited
+    public final ListPath<Contact, QContact> contact = _super.contact;
+
+    //inherited
     public final DateTimePath<java.util.Date> dateBirth = _super.dateBirth;
 
     //inherited
@@ -36,8 +41,6 @@ public class QAuthor extends EntityPathBase<Author> {
 
     //inherited
     public final ComparablePath<gumga.framework.domain.domains.GumgaOi> oi = _super.oi;
-
-    public final ListPath<Subject, QSubject> subjects = this.<Subject, QSubject>createList("subjects", Subject.class, QSubject.class, PathInits.DIRECT2);
 
     //inherited
     public final NumberPath<Integer> version = _super.version;

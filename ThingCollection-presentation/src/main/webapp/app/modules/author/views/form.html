@@ -23,10 +23,30 @@
 		<label gumga-translate-tag="author.website">website</label>
 		<input gumga-error type="text" name="website" ng-model="author.data.website"  class="form-control" />
 	</div>		
-	<div gumga-form-class="subjects">
-		<label gumga-translate-tag="author.subjects">subjects</label>
-		<input gumga-error type="text" name="subjects" ng-model="author.data.subjects"  class="form-control" />
-	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+
+	<div class="full-width-without-padding">
+	    <label for="contact" gumga-translate-tag="author.contact"></label>
+	
+		<gumga-one-to-many
+		        children="author.data.contact"
+		        template-url="app/modules/people/views/modalContact.html"
+		        displayable-property="description"
+		        controller="ModalContactController">
+		</gumga-one-to-many>
+	</div>
+		
+
+	<div class="full-width-without-padding">
+	    <label for="address" gumga-translate-tag="author.address"></label>
+	
+		<gumga-one-to-many
+		        children="author.data.address"
+		        template-url="app/modules/people/views/modalAddress.html"
+		        displayable-property="description"
+		        controller="ModalAddressController">
+		</gumga-one-to-many>
+	</div>
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
     <gumga-form-buttons
             back="author.list"
             submit="author.methods.put(author.data)"

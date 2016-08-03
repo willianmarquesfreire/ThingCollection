@@ -22,7 +22,31 @@
 	<div gumga-form-class="website">
 		<label gumga-translate-tag="people.website">website</label>
 		<input gumga-error type="text" name="website" ng-model="people.data.website"  class="form-control" />
-	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+	</div>		
+
+	<div class="full-width-without-padding">
+	    <label for="contact" gumga-translate-tag="people.contact"></label>
+	
+		<gumga-one-to-many
+		        children="people.data.contact"
+		        template-url="app/modules/people/views/modalContact.html"
+		        displayable-property="description"
+		        controller="ModalContactController">
+		</gumga-one-to-many>
+	</div>
+		
+
+	<div class="full-width-without-padding">
+	    <label for="address" gumga-translate-tag="people.address"></label>
+	
+		<gumga-one-to-many
+		        children="people.data.address"
+		        template-url="app/modules/people/views/modalAddress.html"
+		        displayable-property="description"
+		        controller="ModalAddressController">
+		</gumga-one-to-many>
+	</div>
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
     <gumga-form-buttons
             back="people.list"
             submit="people.methods.put(people.data)"
