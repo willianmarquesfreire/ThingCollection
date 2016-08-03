@@ -9,6 +9,7 @@ public class ApplicationConstants implements GumgaValues {
     @Override
     public String getGumgaSecurityUrl() {
         return "http://192.168.25.250/security-api/publicoperations";
+        //return "http://gumga.servehttp.com/security-api/publicoperations";
     }
 
     @Override
