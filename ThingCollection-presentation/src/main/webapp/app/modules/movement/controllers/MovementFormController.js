@@ -1,13 +1,15 @@
 define([], function() {
 
 
- 	MovementFormController.$inject = ['MovementService', '$state', 'entity', '$scope', 'gumgaController'];
+ 	MovementFormController.$inject = ['MovementService', '$state', 'entity', '$scope', 'gumgaController', 'ThingService'];
 
- 	function MovementFormController(MovementService, $state, entity, $scope, gumgaController) {
+ 	function MovementFormController(MovementService, $state, entity, $scope, gumgaController, ThingService) {
 
     	gumgaController.createRestMethods($scope, MovementService, 'movement');
 
 
+	    gumgaController.createRestMethods($scope, ThingService, 'thing');
+	    $scope.thing.methods.search('description','');    
 
     
     	$scope.movement.data = entity.data || {};
@@ -16,7 +18,6 @@ define([], function() {
         	$scope.openedOutputDate = !$scope.openedOutputDate;
         };
 
-		$scope.movement.data.thing = $scope.movement.data.thing || [];
 		$scope.continue = {};
 	
 		$scope.movement.on('putSuccess',function(data){

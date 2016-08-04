@@ -62,239 +62,214 @@
 
     ,
     "acessory": {
-        "title": "Acessory"
+        "title": "Acessórios"
         ,
-        "menulabel": "Acessory"
+        "menulabel": "Acessórios"
         ,
-        "edit": "Editar Acessory"
+        "edit": "Editar Acessório"
         ,
-        "insert": "Inserir Acessory"
+        "insert": "Inserir Acessório"
         ,
-        "list": "Consulta Acessory"
+        "list": "Consulta Acessório"
         ,
         "id": "id"
         ,
-        "description": "Description"
+        "description": "Descrição"
         ,
-        "currentlocation": "CurrentLocation"
+        "currentlocation": "Localização Atual"
         ,
-        "description": "Description"
+        "description": "Descrição"
         ,
-        "amount": "Amount"
+        "amount": "Qauntidade"
     }
 
     ,
     "book": {
-        "title": "Book"
+        "title": "Livros"
         ,
-        "menulabel": "Book"
+        "menulabel": "Livros"
         ,
-        "edit": "Editar Book"
+        "edit": "Editar Livro"
         ,
-        "insert": "Inserir Book"
+        "insert": "Inserir Livro"
         ,
-        "list": "Consulta Book"
+        "list": "Consulta Livro"
         ,
         "id": "id"
         ,
-        "title": "Title"
+        "title": "Título"
         ,
         "isbn": "Isbn"
         ,
-        "pages": "Pages"
+        "pages": "Páginas"
         ,
-        "publicationyear": "PublicationYear"
+        "publicationyear": "Ano de Publicação"
         ,
-        "editionnumber": "EditionNumber"
+        "editionnumber": "N° de edição"
     }
 
     ,
     "reservation": {
-        "title": "Reservation"
+        "title": "Reserva"
         ,
-        "menulabel": "Reservation"
+        "menulabel": "Reserva"
         ,
-        "edit": "Editar Reservation"
+        "edit": "Editar Reserva"
         ,
-        "insert": "Inserir Reservation"
+        "insert": "Inserir Reserva"
         ,
-        "list": "Consulta Reservation"
+        "list": "Consulta Reserva"
         ,
         "id": "id"
         ,
-        "outputdate": "OutputDate"
+        "outputdate": "Data de Saída"
         ,
-        "expirationdate": "ExpirationDate"
+        "expirationdate": "Data Limite"
     }
 
     ,
     "people": {
-        "title": "People"
+        "title": "Pessoa"
         ,
-        "menulabel": "People"
+        "menulabel": "Pessoa"
         ,
-        "edit": "Editar People"
+        "edit": "Editar Pessoa"
         ,
-        "insert": "Inserir People"
+        "insert": "Inserir Pessoa"
         ,
-        "list": "Consulta People"
+        "list": "Consulta Pessoa"
         ,
         "id": "id"
         ,
-        "name": "Name"
+        "name": "Nome"
         ,
-        "datebirth": "DateBirth"
+        "datebirth": "Data de Nascimento"
         ,
-        "email": "Email"
+        "email": "E-mail"
         ,
         "website": "Website"
     }
 
     ,
     "contact": {
-        "title": "Contact"
+        "title": "Contato"
         ,
-        "menulabel": "Contact"
+        "menulabel": "Contato"
         ,
-        "edit": "Editar Contact"
+        "edit": "Editar Contato"
         ,
-        "insert": "Inserir Contact"
+        "insert": "Inserir Contato"
         ,
-        "list": "Consulta Contact"
+        "list": "Consulta Contato"
         ,
         "id": "id"
         ,
-        "description": "Description"
+        "description": "Descrição"
         ,
-        "phone": "Phone"
+        "phone": "Telefone"
     }
 
     ,
     "movement": {
-        "title": "Movement"
+        "title": "Movimento"
         ,
-        "menulabel": "Movement"
+        "menulabel": "Movimento"
         ,
-        "edit": "Editar Movement"
+        "edit": "Editar Movimento"
         ,
-        "insert": "Inserir Movement"
+        "insert": "Inserir Movimento"
         ,
-        "list": "Consulta Movement"
+        "list": "Consulta Movimento"
         ,
         "id": "id"
         ,
-        "outputdate": "OutputDate"
+        "outputdate": "Data de Saída"
     }
 
     ,
     "author": {
-        "title": "Author"
+        "title": "Autor"
         ,
-        "menulabel": "Author"
+        "menulabel": "Autor"
         ,
-        "edit": "Editar Author"
+        "edit": "Editar Autor"
         ,
-        "insert": "Inserir Author"
+        "insert": "Inserir Autor"
         ,
-        "list": "Consulta Author"
+        "list": "Consulta Autor"
         ,
         "id": "id"
         ,
-        "name": "Name"
+        "name": "Nome"
         ,
-        "datebirth": "DateBirth"
+        "datebirth": "Data de Aniversário"
         ,
-        "email": "Email"
+        "email": "E-mail"
         ,
         "website": "Website"
         ,
-        "subjects": "Subjects"
-    }
-
-    ,
-    "book": {
-        "title": "Book"
-        ,
-        "menulabel": "Book"
-        ,
-        "edit": "Editar Book"
-        ,
-        "insert": "Inserir Book"
-        ,
-        "list": "Consulta Book"
-        ,
-        "id": "id"
-        ,
-        "title": "Title"
-        ,
-        "isbn": "Isbn"
-        ,
-        "pages": "Pages"
-        ,
-        "publicationyear": "PublicationYear"
-        ,
-        "editionnumber": "EditionNumber"
+        "subjects": "Assuntos"
     }
 
     ,
     "publishinghouse": {
-        "title": "PublishingHouse"
+        "title": "Editora"
         ,
-        "menulabel": "PublishingHouse"
+        "menulabel": "Editora"
         ,
-        "edit": "Editar PublishingHouse"
+        "edit": "Editar Editora"
         ,
-        "insert": "Inserir PublishingHouse"
+        "insert": "Inserir Editora"
         ,
-        "list": "Consulta PublishingHouse"
+        "list": "Consulta Editora"
         ,
         "id": "id"
         ,
-        "name": "Name"
+        "name": "Nome"
         ,
-        "email": "Email"
+        "email": "E-mail"
         ,
         "website": "Website"
     }
 
     ,
     "transport": {
-        "title": "Transport"
+        "title": "Transporte"
         ,
-        "menulabel": "Transport"
+        "menulabel": "Transporte"
         ,
-        "edit": "Editar Transport"
+        "edit": "Editar Transporte"
         ,
-        "insert": "Inserir Transport"
+        "insert": "Inserir Transporte"
         ,
-        "list": "Consulta Transport"
+        "list": "Consulta Transporte"
         ,
         "id": "id"
         ,
-        "outputdate": "OutputDate"
+        "outputdate": "Data de Saída"
         ,
-        "origin": "Origin"
+        "origin": "Origem"
         ,
-        "destination": "Destination"
+        "destination": "Destino"
     }
 
     ,
     "address": {
-        "title": "Address"
+        "title": "Endereço"
         ,
-        "menulabel": "Address"
+        "menulabel": "Endereço"
         ,
-        "edit": "Editar Address"
+        "edit": "Editar Endereço"
         ,
-        "insert": "Inserir Address"
+        "insert": "Inserir Endereço"
         ,
-        "list": "Consulta Address"
+        "list": "Consulta Endereço"
         ,
         "id": "id"
         ,
-        "description": "Description"
+        "description": "Descrição"
         ,
-        "address": "Address"
+        "address": "Endereço"
     }
 
     ,

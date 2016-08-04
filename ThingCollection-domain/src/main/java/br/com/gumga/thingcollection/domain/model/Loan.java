@@ -22,7 +22,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class Loan extends Movement {
 
     @Temporal(javax.persistence.TemporalType.DATE)
-    private Date limit;
+    private Date limitDate;
     @Temporal(javax.persistence.TemporalType.DATE)
     private Calendar devolutionDate;
     
@@ -30,13 +30,15 @@ public class Loan extends Movement {
     public Loan() {
     }
 
-    public Date getLimit() {
-        return this.limit;
+    public Date getLimitDate() {
+        return limitDate;
     }
 
-    public void setLimit(Date limit) {
-        this.limit = limit;
+    public void setLimitDate(Date limitDate) {
+        this.limitDate = limitDate;
     }
+
+    
 
     public Calendar getDevolutionDate() {
         return this.devolutionDate;

@@ -28,6 +28,12 @@
             <artifactId>gumga-domain</artifactId>
         </dependency>
         <!-- DEPENDENCIAS em geral-->
+        <dependency>
+            <groupId>gumga.framework</groupId>
+            <artifactId>gumga-security</artifactId>
+            <version>1.2.11-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

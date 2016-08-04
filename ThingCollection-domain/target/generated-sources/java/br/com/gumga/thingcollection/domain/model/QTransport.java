@@ -22,26 +22,26 @@ public class QTransport extends EntityPathBase<Transport> {
 
     public static final QTransport transport = new QTransport("transport");
 
-    public final QMovement _super = new QMovement(this);
+    public final QMovement _super;
 
     public final QLocation destination;
 
     //inherited
-    public final NumberPath<Long> id = _super.id;
+    public final NumberPath<Long> id;
 
     //inherited
-    public final ComparablePath<gumga.framework.domain.domains.GumgaOi> oi = _super.oi;
+    public final ComparablePath<gumga.framework.domain.domains.GumgaOi> oi;
 
     public final QLocation origin;
 
     //inherited
-    public final DatePath<java.util.Date> outputDate = _super.outputDate;
+    public final DatePath<java.util.Date> outputDate;
+
+    // inherited
+    public final QThing thing;
 
     //inherited
-    public final ListPath<Thing, QThing> thing = _super.thing;
-
-    //inherited
-    public final NumberPath<Integer> version = _super.version;
+    public final NumberPath<Integer> version;
 
     public QTransport(String variable) {
         this(Transport.class, forVariable(variable), INITS);
@@ -61,8 +61,14 @@ public class QTransport extends EntityPathBase<Transport> {
 
     public QTransport(Class<? extends Transport> type, PathMetadata<?> metadata, PathInits inits) {
         super(type, metadata, inits);
+        this._super = new QMovement(type, metadata, inits);
         this.destination = inits.isInitialized("destination") ? new QLocation(forProperty("destination")) : null;
+        this.id = _super.id;
+        this.oi = _super.oi;
         this.origin = inits.isInitialized("origin") ? new QLocation(forProperty("origin")) : null;
+        this.outputDate = _super.outputDate;
+        this.thing = _super.thing;
+        this.version = _super.version;
     }
 
 }

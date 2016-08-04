@@ -12,16 +12,18 @@
 		</p>
 	</div>		
 
-	<div class="full-width-without-padding">
-	    <label for="thing" gumga-translate-tag="movement.thing"></label>
-	
-		<gumga-one-to-many
-		        children="movement.data.thing"
-		        template-url="app/modules/movement/views/modalThing.html"
-		        displayable-property="description"
-		        controller="ModalThingController">
-		</gumga-one-to-many>
+	<div gumga-form-class="thing">
+		<label gumga-translate-tag="movement.thing">thing</label>
+	    <gumga-many-to-one
+	            name="thing"
+	            value="movement.data.thing"
+	            search-method="thing.methods.asyncSearch('description', param)"
+	            field="description"
+	            authorize-add="true"
+	            post-method="thing.methods.asyncPost(value, 'description')">
+	    </gumga-many-to-one>
 	</div>
+
     <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
     <gumga-form-buttons
             back="movement.list"

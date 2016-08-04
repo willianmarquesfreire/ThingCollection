@@ -1,13 +1,15 @@
 define([], function() {
 
 
- 	ReservationFormController.$inject = ['ReservationService', '$state', 'entity', '$scope', 'gumgaController'];
+ 	ReservationFormController.$inject = ['ReservationService', '$state', 'entity', '$scope', 'gumgaController', 'ThingService'];
 
- 	function ReservationFormController(ReservationService, $state, entity, $scope, gumgaController) {
+ 	function ReservationFormController(ReservationService, $state, entity, $scope, gumgaController, ThingService) {
 
     	gumgaController.createRestMethods($scope, ReservationService, 'reservation');
 
 
+	    gumgaController.createRestMethods($scope, ThingService, 'thing');
+	    $scope.thing.methods.search('description','');    
 
     
     	$scope.reservation.data = entity.data || {};
@@ -21,7 +23,6 @@ define([], function() {
         	$scope.openedExpirationDate = !$scope.openedExpirationDate;
         };
 
-		$scope.reservation.data.thing = $scope.reservation.data.thing || [];
 		$scope.continue = {};
 	
 		$scope.reservation.on('putSuccess',function(data){

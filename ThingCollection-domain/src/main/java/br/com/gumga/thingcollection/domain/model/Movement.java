@@ -25,8 +25,8 @@ public class Movement extends GumgaModel<Long> {
     private Integer version;
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date outputDate;
-    @OneToMany
-    private List<Thing> thing;
+    @ManyToOne
+    private Thing thing;
 
     public Movement() {
     }
@@ -39,12 +39,14 @@ public class Movement extends GumgaModel<Long> {
         this.outputDate = outputDate;
     }
 
-    public List<Thing> getThing() {
+    public Thing getThing() {
         return thing;
     }
 
-    public void setThing(List<Thing> thing) {
+    public void setThing(Thing thing) {
         this.thing = thing;
     }
+
+    
     
 }

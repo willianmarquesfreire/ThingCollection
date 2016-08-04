@@ -28,6 +28,7 @@
             <groupId>gumga.framework</groupId>
             <artifactId>gumga-security</artifactId>
             <type>jar</type>
+            <version>1.2.11-SNAPSHOT</version>
         </dependency>
         <!-- DEPENDENCIAS em geral-->
         <dependency>

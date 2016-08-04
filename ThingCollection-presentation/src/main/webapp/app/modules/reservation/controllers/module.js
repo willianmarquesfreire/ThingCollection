@@ -5,7 +5,6 @@ define(function (require) {
 
     return angular
             .module('app.reservation.controllers', ['app.reservation.services','ui.router'])
-            .controller('ModalThingController', require('app/modules/reservation/controllers/ModalThingController'))
             .controller('ReservationFormController', require('app/modules/reservation/controllers/ReservationFormController'))
             .controller('ReservationListController', require('app/modules/reservation/controllers/ReservationListController'));
 });

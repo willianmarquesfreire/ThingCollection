@@ -22,9 +22,9 @@ Contact [label = "{Contact|version:Integer\ldescription:String\lphone:String\l|}
 Author [label = "{Author||}"]
 People [label = "{People|version:Integer\lname:String\ldateBirth:Date\lemail:String\lwebsite:String\lcontact:List\laddress:List\l|}"]
 Book [label = "{Book|title:String\lisbn:String\lpages:int\lpublicationYear:Date\leditionNumber:String\lpublishingHouse:PublishingHouse\lauthor:List\lsubjects:List\l|}"]
-Movement [label = "{Movement|version:Integer\loutputDate:Date\lthing:List\l|}"]
+Movement [label = "{Movement|version:Integer\loutputDate:Date\lthing:Thing\l|}"]
 Address [label = "{Address|version:Integer\ldescription:String\laddress:GumgaAddress\l|}"]
-Loan [label = "{Loan|limit:Date\ldevolutionDate:Calendar\l|}"]
+Loan [label = "{Loan|limitDate:Date\ldevolutionDate:Calendar\l|}"]
 Transport [label = "{Transport|origin:Location\ldestination:Location\l|}"]
 Subject [label = "{Subject|version:Integer\ldescription:String\l|}"]
 Thing [label = "{Thing|version:Integer\ldescription:String\lcurrentLocation:Location\l|}"]
@@ -41,12 +41,12 @@ edge [arrowhead = "none" headlabel = "*" taillabel = "1@"] People -> Contact [la
 edge [arrowhead = "none" headlabel = "*" taillabel = "*@"] Book -> Author [label = "author"]
 edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Book -> Thing
 edge [arrowhead = "none" headlabel = "1" taillabel = "*@"] Book -> PublishingHouse [label = "publishingHouse"]
-edge [arrowhead = "none" headlabel = "*" taillabel = "1@"] Movement -> Thing [label = "thing"]
 edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Acessory -> Thing
 edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Author -> People
 edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Reservation -> Movement
 edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Loan -> Movement
 edge [arrowhead = "none" headlabel = "*" taillabel = "*@"] Book -> Subject [label = "subjects"]
+edge [arrowhead = "none" headlabel = "1" taillabel = "*@"] Movement -> Thing [label = "thing"]
 edge [arrowhead = "none" headlabel = "1" taillabel = "*@"] Thing -> Location [label = "currentLocation"]
 
 }
