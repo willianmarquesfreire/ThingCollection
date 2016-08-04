@@ -21,6 +21,7 @@ define(function(require) {
     require('app/modules/book/module');
     require('app/modules/publishinghouse/module');
     require('app/modules/transport/module');
+    require('app/modules/subject/module');
   //FIMREQUIRE
   angular.module('app.core', [
     'ui.router'
@@ -41,6 +42,7 @@ define(function(require) {
         ,'app.book'
         ,'app.publishinghouse'
         ,'app.transport'
+        ,'app.subject'
   //FIMINJECTIONS
     ])
     .config(function($stateProvider, $urlRouterProvider, $httpProvider, $injector, GumgaAlertProvider) {
@@ -187,6 +189,14 @@ define(function(require) {
         }, 
             url: '/transport',
             templateUrl: 'app/modules/transport/views/base.html'
+        })
+
+        .state('subject', {
+        data: {
+            id: 1
+        }, 
+            url: '/subject',
+            templateUrl: 'app/modules/subject/views/base.html'
         })
 
         //FIMROUTE

@@ -98,7 +98,20 @@
 	            left-search="subject.methods.asyncSearch('description', param)"
 	            filter-parameters="description"
 	            post-method="subject.methods.save(value)"
-	            authorize-add="true">
+	            authorize-add="false"
+				
+				text-left="Listando {{$value}} {{$value > 1 ? 'itens': 'item'}}"
+                text-right="Listando {{$value}} {{$value > 1 ? 'itens': 'item'}}"
+                text-heading-left=""
+                text-heading-right="Gêneros selecionados"
+                text-moveall-left="Mover todos para direita"
+                text-moveall-right="Mover todos para esquerda"
+                text-left-empty="Lista está vazia"
+                text-right-empty="Lista está vazia"
+                text-right-placeholder="Filtrar"
+                text-left-placeholder="Filtrar"
+				
+				>
 	        <left-field>{{$value.description}}</left-field>
 	        <right-field>{{$value.description}}</right-field>
 	    </gumga-many-to-many>

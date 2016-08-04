@@ -13,3 +13,4 @@ br/com/gumga/thingcollection/api/ContactAPI.class
 br/com/gumga/thingcollection/api/LocationAPI.class
 br/com/gumga/thingcollection/ThingCollection/seed/Seed.class
 br/com/gumga/thingcollection/api/BookAPI.class
+br/com/gumga/thingcollection/api/SubjectAPI.class

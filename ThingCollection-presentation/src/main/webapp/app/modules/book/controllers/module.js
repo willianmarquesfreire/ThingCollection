@@ -5,6 +5,6 @@ define(function (require) {
 
     return angular
             .module('app.book.controllers', ['app.book.services','ui.router'])
-            .controller('BookFormController', require('app/modules/book/controllers/BookFormController'))
-            .controller('BookListController', require('app/modules/book/controllers/BookListController'));
+            .controller('BookFormController', require('./BookFormController'))
+            .controller('BookListController', require('./BookListController'));
 });

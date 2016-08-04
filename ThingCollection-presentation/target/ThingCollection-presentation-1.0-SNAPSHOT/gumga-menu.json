@@ -1,22 +1,10 @@
 [
     {
-        "label": "Transport",
-        "URL": "transport.list",
-        "key": "CRUD-Transport",
-        "icon": "glyphicon glyphicon-user",
-        "icon_color": "",
-        "imageUrl": "",
-        "imageWidth": "",
-        "imageHeight": "",
-        "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "transport.insert",
-             "key": "CRUD-Transport",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
+        "label": "Home",
+        "URL": "welcome",
+        "key": "CRUD-BASE",
+        "icon": "glyphicon glyphicon-home",
+        "filhos": []
     },
     {
         "label": "PublishingHouse",
@@ -28,14 +16,14 @@
         "imageWidth": "",
         "imageHeight": "",
         "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "publishinghouse.insert",
-             "key": "CRUD-PublishingHouse",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
+            {
+                "label": " Inserir ",
+                "URL": "publishinghouse.insert",
+                "key": "CRUD-PublishingHouse",
+                "icon": "glyphicon glyphicon-user",
+                "filhos": []
+            }
+        ]
     },
     {
         "label": "Book",
@@ -47,14 +35,14 @@
         "imageWidth": "",
         "imageHeight": "",
         "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "book.insert",
-             "key": "CRUD-Book",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
+            {
+                "label": " Inserir ",
+                "URL": "book.insert",
+                "key": "CRUD-Book",
+                "icon": "glyphicon glyphicon-user",
+                "filhos": []
+            }
+        ]
     },
     {
         "label": "Author",
@@ -66,14 +54,14 @@
         "imageWidth": "",
         "imageHeight": "",
         "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "author.insert",
-             "key": "CRUD-Author",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
+            {
+                "label": " Inserir ",
+                "URL": "author.insert",
+                "key": "CRUD-Author",
+                "icon": "glyphicon glyphicon-user",
+                "filhos": []
+            }
+        ]
     },
     {
         "label": "Movement",
@@ -85,52 +73,14 @@
         "imageWidth": "",
         "imageHeight": "",
         "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "movement.insert",
-             "key": "CRUD-Movement",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
-    },
-    {
-        "label": "Address",
-        "URL": "address.list",
-        "key": "CRUD-Address",
-        "icon": "glyphicon glyphicon-user",
-        "icon_color": "",
-        "imageUrl": "",
-        "imageWidth": "",
-        "imageHeight": "",
-        "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "address.insert",
-             "key": "CRUD-Address",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
-    },
-    {
-        "label": "Contact",
-        "URL": "contact.list",
-        "key": "CRUD-Contact",
-        "icon": "glyphicon glyphicon-user",
-        "icon_color": "",
-        "imageUrl": "",
-        "imageWidth": "",
-        "imageHeight": "",
-        "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "contact.insert",
-             "key": "CRUD-Contact",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
+            {
+                "label": " Inserir ",
+                "URL": "movement.insert",
+                "key": "CRUD-Movement",
+                "icon": "glyphicon glyphicon-user",
+                "filhos": []
+            }
+        ]
     },
     {
         "label": "People",
@@ -142,14 +92,14 @@
         "imageWidth": "",
         "imageHeight": "",
         "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "people.insert",
-             "key": "CRUD-People",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
+            {
+                "label": " Inserir ",
+                "URL": "people.insert",
+                "key": "CRUD-People",
+                "icon": "glyphicon glyphicon-user",
+                "filhos": []
+            }
+        ]
     },
     {
         "label": "Reservation",
@@ -161,33 +111,14 @@
         "imageWidth": "",
         "imageHeight": "",
         "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "reservation.insert",
-             "key": "CRUD-Reservation",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
-    },
-    {
-        "label": "Book",
-        "URL": "book.list",
-        "key": "CRUD-Book",
-        "icon": "glyphicon glyphicon-user",
-        "icon_color": "",
-        "imageUrl": "",
-        "imageWidth": "",
-        "imageHeight": "",
-        "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "book.insert",
-             "key": "CRUD-Book",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
+            {
+                "label": " Inserir ",
+                "URL": "reservation.insert",
+                "key": "CRUD-Reservation",
+                "icon": "glyphicon glyphicon-user",
+                "filhos": []
+            }
+        ]
     },
     {
         "label": "Acessory",
@@ -199,14 +130,14 @@
         "imageWidth": "",
         "imageHeight": "",
         "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "acessory.insert",
-             "key": "CRUD-Acessory",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
+            {
+                "label": " Inserir ",
+                "URL": "acessory.insert",
+                "key": "CRUD-Acessory",
+                "icon": "glyphicon glyphicon-user",
+                "filhos": []
+            }
+        ]
     },
     {
         "label": "Location",
@@ -218,63 +149,35 @@
         "imageWidth": "",
         "imageHeight": "",
         "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "location.insert",
-             "key": "CRUD-Location",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
+            {
+                "label": " Inserir ",
+                "URL": "location.insert",
+                "key": "CRUD-Location",
+                "icon": "glyphicon glyphicon-user",
+                "filhos": []
+            }
+        ]
     },
     {
-        "label": "Thing",
-        "URL": "thing.list",
-        "key": "CRUD-Thing",
-        "icon": "glyphicon glyphicon-user",
-        "icon_color": "",
-        "imageUrl": "",
-        "imageWidth": "",
-        "imageHeight": "",
+        "label": "configuration",
+        "URL": "configuration",
+        "key": "CONFIGURATION",
+        "gumgatagdefinition": "Tags",
         "filhos": [
-             {
-             "label": " Inserir ",
-             "URL": "thing.insert",
-             "key": "CRUD-Thing",
-             "icon": "glyphicon glyphicon-user",
-             "filhos": []
-             }
-         ]
-    },
-	{
-  "label": "Home",
-  "URL": "welcome",
-  "key": "CRUD-BASE",
-  "icon": "glyphicon glyphicon-home",
-  "filhos": []
-	}	,
-	{
-		"label": "configuration",
-		"URL": "configuration",
-		"key": "CONFIGURATION",
-		"gumgatagdefinition": "Tags",
-		"filhos": [
-				{
-						"label": "gumgacustomfield",
-						"URL": "gumgacustomfield.list",
-						"key": "CUSTOMFIELDS",
-						"icon": "glyphicon glyphicon-tags",
-						"filhos": []
-
-				},
-				{
-						"label": "gumgatagdefinition",
-						"URL": "gumgatagdefinition.list",
-						"key": "TAGS",
-						"icon": "glyphicon glyphicon-tag",
-						"filhos": []
-				}
-		]
-  }
-
+            {
+                "label": "gumgacustomfield",
+                "URL": "gumgacustomfield.list",
+                "key": "CUSTOMFIELDS",
+                "icon": "glyphicon glyphicon-tags",
+                "filhos": []
+            },
+            {
+                "label": "gumgatagdefinition",
+                "URL": "gumgatagdefinition.list",
+                "key": "TAGS",
+                "icon": "glyphicon glyphicon-tag",
+                "filhos": []
+            }
+        ]
+    }
 ]

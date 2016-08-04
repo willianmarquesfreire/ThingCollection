@@ -1,330 +1,182 @@
 {
     "coisa": {
-        "title": "Coisa"
-        ,
-        "menulabel": "Coisa "
-        ,
-        "id": "Identificador"
-        ,
-        "descricao": "Descrição"
-        ,
-        "valor": "Valor"
-        ,
-        "ativo": "Ativo"
-        ,
-        "new": "Novo"
-        ,
-        "base": "Coisa"
-        ,
-        "list": "Listar Coisa"
-        ,
-        "edit": "Editar Coisa"
-        ,
+        "title": "Coisa",
+        "menulabel": "Coisa ",
+        "id": "Identificador",
+        "descricao": "Descrição",
+        "valor": "Valor",
+        "ativo": "Ativo",
+        "new": "Novo",
+        "base": "Coisa",
+        "list": "Listar Coisa",
+        "edit": "Editar Coisa",
         "insert": "Inserir Coisa"
-    }
-    ,
+    },
     "thing": {
-        "title": "Objeto"
-        ,
-        "menulabel": "Objeto"
-        ,
-        "edit": "Editar Objeto"
-        ,
-        "insert": "Inserir Objeto"
-        ,
-        "list": "Consulta Objeto"
-        ,
-        "id": "id"
-        ,
-        "description": "Descrição"
-        ,
+        "title": "Objeto",
+        "menulabel": "Objeto",
+        "edit": "Editar Objeto",
+        "insert": "Inserir Objeto",
+        "list": "Consulta Objeto",
+        "id": "id",
+        "description": "Descrição",
         "currentlocation": "Localização Atual"
-    }
-
-    ,
+    },
     "location": {
-        "title": "Localização"
-        ,
-        "menulabel": "Localização"
-        ,
-        "edit": "Editar Localização"
-        ,
-        "insert": "Inserir Localização"
-        ,
-        "list": "Consulta Localização"
-        ,
-        "id": "id"
-        ,
-        "name": "Name"
-        ,
+        "title": "Localização",
+        "menulabel": "Localização",
+        "edit": "Editar Localização",
+        "insert": "Inserir Localização",
+        "list": "Consulta Localização",
+        "id": "id",
+        "name": "Name",
         "gps": "Localização"
-    }
-
-    ,
+    },
     "acessory": {
-        "title": "Acessórios"
-        ,
-        "menulabel": "Acessórios"
-        ,
-        "edit": "Editar Acessório"
-        ,
-        "insert": "Inserir Acessório"
-        ,
-        "list": "Consulta Acessório"
-        ,
-        "id": "id"
-        ,
-        "description": "Descrição"
-        ,
-        "currentlocation": "Localização Atual"
-        ,
-        "description": "Descrição"
-        ,
+        "title": "Acessórios",
+        "menulabel": "Acessórios",
+        "edit": "Editar Acessório",
+        "insert": "Inserir Acessório",
+        "list": "Consulta Acessório",
+        "id": "id",
+        "description": "Descrição",
+        "currentlocation": "Localização Atual",
+        "description": "Descrição",
         "amount": "Qauntidade"
-    }
-
-    ,
+    },
     "book": {
-        "title": "Livros"
-        ,
-        "menulabel": "Livros"
-        ,
-        "edit": "Editar Livro"
-        ,
-        "insert": "Inserir Livro"
-        ,
-        "list": "Consulta Livro"
-        ,
-        "id": "id"
-        ,
-        "title": "Título"
-        ,
-        "isbn": "Isbn"
-        ,
-        "pages": "Páginas"
-        ,
-        "publicationyear": "Ano de Publicação"
-        ,
-        "editionnumber": "N° de edição"
-    }
-
-    ,
+        "title": "Livros",
+        "menulabel": "Livros",
+        "edit": "Editar Livro",
+        "insert": "Inserir Livro",
+        "list": "Consulta Livro",
+        "id": "id",
+        "title": "Título",
+        "isbn": "ISBN",
+        "pages": "Páginas",
+        "publicationyear": "Ano de Publicação",
+        "editionnumber": "N° de edição",
+        "description": "Descrição",
+        "currentLocation": "Localização Atual",
+        "publishingHouse": "Editora"
+    },
     "reservation": {
-        "title": "Reserva"
-        ,
-        "menulabel": "Reserva"
-        ,
-        "edit": "Editar Reserva"
-        ,
-        "insert": "Inserir Reserva"
-        ,
-        "list": "Consulta Reserva"
-        ,
-        "id": "id"
-        ,
-        "outputdate": "Data de Saída"
-        ,
+        "title": "Reserva",
+        "menulabel": "Reserva",
+        "edit": "Editar Reserva",
+        "insert": "Inserir Reserva",
+        "list": "Consulta Reserva",
+        "id": "id",
+        "outputdate": "Data de Saída",
         "expirationdate": "Data Limite"
-    }
-
-    ,
+    },
     "people": {
-        "title": "Pessoa"
-        ,
-        "menulabel": "Pessoa"
-        ,
-        "edit": "Editar Pessoa"
-        ,
-        "insert": "Inserir Pessoa"
-        ,
-        "list": "Consulta Pessoa"
-        ,
-        "id": "id"
-        ,
-        "name": "Nome"
-        ,
-        "datebirth": "Data de Nascimento"
-        ,
-        "email": "E-mail"
-        ,
-        "website": "Website"
-    }
-
-    ,
+        "title": "Pessoa",
+        "menulabel": "Pessoa",
+        "edit": "Editar Pessoa",
+        "insert": "Inserir Pessoa",
+        "list": "Consulta Pessoa",
+        "id": "id",
+        "name": "Nome",
+        "datebirth": "Data de Nascimento",
+        "email": "E-mail",
+        "website": "Website",
+        "contact": "Contato",
+        "address": "Endereço",
+        "description": "Descrição"
+    },
     "contact": {
-        "title": "Contato"
-        ,
-        "menulabel": "Contato"
-        ,
-        "edit": "Editar Contato"
-        ,
-        "insert": "Inserir Contato"
-        ,
-        "list": "Consulta Contato"
-        ,
-        "id": "id"
-        ,
-        "description": "Descrição"
-        ,
+        "title": "Contato",
+        "menulabel": "Contato",
+        "edit": "Editar Contato",
+        "insert": "Inserir Contato",
+        "list": "Consulta Contato",
+        "id": "id",
+        "description": "Descrição",
         "phone": "Telefone"
-    }
-
-    ,
+    },
     "movement": {
-        "title": "Movimento"
-        ,
-        "menulabel": "Movimento"
-        ,
-        "edit": "Editar Movimento"
-        ,
-        "insert": "Inserir Movimento"
-        ,
-        "list": "Consulta Movimento"
-        ,
-        "id": "id"
-        ,
+        "title": "Movimento",
+        "menulabel": "Movimento",
+        "edit": "Editar Movimento",
+        "insert": "Inserir Movimento",
+        "list": "Consulta Movimento",
+        "id": "id",
         "outputdate": "Data de Saída"
-    }
-
-    ,
+    },
     "author": {
-        "title": "Autor"
-        ,
-        "menulabel": "Autor"
-        ,
-        "edit": "Editar Autor"
-        ,
-        "insert": "Inserir Autor"
-        ,
-        "list": "Consulta Autor"
-        ,
-        "id": "id"
-        ,
-        "name": "Nome"
-        ,
-        "datebirth": "Data de Aniversário"
-        ,
-        "email": "E-mail"
-        ,
-        "website": "Website"
-        ,
+        "title": "Autor",
+        "menulabel": "Autor",
+        "edit": "Editar Autor",
+        "insert": "Inserir Autor",
+        "list": "Consulta Autor",
+        "id": "id",
+        "name": "Nome",
+        "datebirth": "Data de Aniversário",
+        "email": "E-mail",
+        "website": "Website",
         "subjects": "Assuntos"
-    }
-
-    ,
+    },
     "publishinghouse": {
-        "title": "Editora"
-        ,
-        "menulabel": "Editora"
-        ,
-        "edit": "Editar Editora"
-        ,
-        "insert": "Inserir Editora"
-        ,
-        "list": "Consulta Editora"
-        ,
-        "id": "id"
-        ,
-        "name": "Nome"
-        ,
-        "email": "E-mail"
-        ,
+        "title": "Editora",
+        "menulabel": "Editora",
+        "edit": "Editar Editora",
+        "insert": "Inserir Editora",
+        "list": "Consulta Editora",
+        "id": "id",
+        "name": "Nome",
+        "email": "E-mail",
         "website": "Website"
-    }
-
-    ,
+    },
     "transport": {
-        "title": "Transporte"
-        ,
-        "menulabel": "Transporte"
-        ,
-        "edit": "Editar Transporte"
-        ,
-        "insert": "Inserir Transporte"
-        ,
-        "list": "Consulta Transporte"
-        ,
-        "id": "id"
-        ,
-        "outputdate": "Data de Saída"
-        ,
-        "origin": "Origem"
-        ,
+        "title": "Transporte",
+        "menulabel": "Transporte",
+        "edit": "Editar Transporte",
+        "insert": "Inserir Transporte",
+        "list": "Consulta Transporte",
+        "id": "id",
+        "outputdate": "Data de Saída",
+        "origin": "Origem",
         "destination": "Destino"
-    }
-
-    ,
+    },
     "address": {
-        "title": "Endereço"
-        ,
-        "menulabel": "Endereço"
-        ,
-        "edit": "Editar Endereço"
-        ,
-        "insert": "Inserir Endereço"
-        ,
-        "list": "Consulta Endereço"
-        ,
-        "id": "id"
-        ,
-        "description": "Descrição"
-        ,
-        "address": "Endereço"
-    }
-
-    ,
-    "address": {
-        "cep": "CEP"
-        ,
-        "numero": "Número"
-        ,
-        "bairro": "Bairro"
-        ,
-        "uf": "Estado"
-        ,
-        "pais": "País"
-        ,
-        "complemento": "Complemento"
-        ,
-        "logradouro": "Logradouro"
-        ,
-        "tipologradouro": "Tipo de Logradouro"
-        ,
+        "title": "Endereço",
+        "menulabel": "Endereço",
+        "edit": "Editar Endereço",
+        "insert": "Inserir Endereço",
+        "list": "Consulta Endereço",
+        "id": "id",
+        "description": "Descrição",
+        "address": "Endereço",
+        "cep": "CEP",
+        "numero": "Número",
+        "bairro": "Bairro",
+        "uf": "Estado",
+        "pais": "País",
+        "complemento": "Complemento",
+        "logradouro": "Logradouro",
+        "tipologradouro": "Tipo de Logradouro",
         "localidade": "Localização"
-    }
-    ,
+    },
     "formbuttons": {
         "inserir": "Continuar inserindo"
-    }
-    ,
+    },
     "table": {
         "select": "Selecionar Todos",
         "clean": "Limpar pesquisa"
-    }
-    ,
+    },
     "advanced": {
-        "gt": "maior que"
-        ,
-        "ge": "maior igual"
-        ,
-        "lt": "menor que"
-        ,
-        "le": "menor igual"
-        ,
-        "eq": "igual "
-        ,
-        "ne": "diferente de"
-        ,
-        "in": "faz parte de"
-        ,
-        "not_in": "não faz parte de"
-        ,
-        "contains": "contém"
-        ,
-        "starts_with": "começa com"
-        ,
-        "ends_with": "termina com"
-        ,
+        "gt": "maior que",
+        "ge": "maior igual",
+        "lt": "menor que",
+        "le": "menor igual",
+        "eq": "igual ",
+        "ne": "diferente de",
+        "in": "faz parte de",
+        "not_in": "não faz parte de",
+        "contains": "contém",
+        "starts_with": "começa com",
+        "ends_with": "termina com",
         "not_contains": "não contém"
     },
     "general": {
@@ -338,8 +190,7 @@
         "menulabel": "Início"
     },
     "gumgatagdefinition": {
-        "name": "Nome"
-        ,
+        "name": "Nome",
         "menuLabel": "Tags"
     },
     "configuration": {
@@ -347,5 +198,4 @@
         "gumgatagdefinition": "Tags",
         "gumgacustomfield": "Atributos Genéricos"
     }
-
 }

@@ -49,6 +49,7 @@ mvn br.com.gumga:gumgag:api -Dentidade=br.com.gumga.thingcollection.domain.model
 mvn br.com.gumga:gumgag:api -Dentidade=br.com.gumga.thingcollection.domain.model.Book
 mvn br.com.gumga:gumgag:api -Dentidade=br.com.gumga.thingcollection.domain.model.PublishingHouse
 mvn br.com.gumga:gumgag:api -Dentidade=br.com.gumga.thingcollection.domain.model.Transport
+mvn br.com.gumga:gumgag:api -Dentidade=br.com.gumga.thingcollection.domain.model.Subject
 
 cd ThingCollection-presentation
 
@@ -65,7 +66,32 @@ mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.dom
 mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Book -Doverride=true
 mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.PublishingHouse -Doverride=true
 mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Transport -Doverride=true
+mvn br.com.gumga:gumgag:apresentacao -Dentidade=br.com.gumga.thingcollection.domain.model.Subject -Doverride=true
 
 mvn clean install
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
