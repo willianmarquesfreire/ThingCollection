@@ -1,129 +1,142 @@
 <form name="BookForm" gumga-form novalidate>
-		
-	<div gumga-form-class="description">
-		<label gumga-translate-tag="book.description">description</label>
-		<input gumga-error type="text" name="description" ng-model="book.data.description"  class="form-control" />
-	</div>		
 
-	<div gumga-form-class="currentLocation">
-		<label gumga-translate-tag="book.currentLocation">currentLocation</label>
-	    <gumga-many-to-one
-	            name="currentLocation"
-	            value="book.data.currentLocation"
-	            search-method="location.methods.asyncSearch('name', param)"
-	            field="name"
-	            authorize-add="true"
-	            post-method="location.methods.asyncPost(value, 'name')">
-	    </gumga-many-to-one>
-	</div>
+    <div gumga-form-class="description">
+        <label gumga-translate-tag="book.description">description</label>
+        <input gumga-error type="text" name="description" ng-model="book.data.description"  class="form-control" />
+    </div>		
 
-		
-	<div gumga-form-class="title">
-		<label gumga-translate-tag="book.title">title</label>
-		<input gumga-error type="text" name="title" ng-model="book.data.title"  class="form-control" />
-	</div>		
-	<div gumga-form-class="isbn">
-		<label gumga-translate-tag="book.isbn">isbn</label>
-		<input gumga-error type="text" name="isbn" ng-model="book.data.isbn"  class="form-control" />
-	</div>		
-	<div gumga-form-class="pages">
-		<label gumga-translate-tag="book.pages">pages</label>
-		<input gumga-error type="text" name="pages" ng-model="book.data.pages"  class="form-control" />
-	</div>		
-	<div gumga-form-class="publicationYear">
-		<label gumga-translate-tag="book.publicationYear">publicationYear</label>
-		<p class="input-group">
-			<input type="text" name="publicationYear" class="form-control"  uib-datepicker-popup="dd/MM/yyyy" ng-model="book.data.publicationYear" is-open="openedPublicationYear" ng-click="openedPublicationYear = !openedPublicationYear" close-text="Close" />
-			<span class="input-group-btn">
-				<button type="button" class="btn btn-default" ng-click="openpublicationYear()">
-					<i class="glyphicon glyphicon-calendar"></i>
-				</button>
-			</span>
-		</p>
-	</div>		
-	<div gumga-form-class="editionNumber">
-		<label gumga-translate-tag="book.editionNumber">editionNumber</label>
-		<input gumga-error type="text" name="editionNumber" ng-model="book.data.editionNumber"  class="form-control" />
-	</div>		
+    <div gumga-form-class="currentLocation">
+        <label gumga-translate-tag="book.currentLocation">currentLocation</label>
+        <gumga-many-to-one
+            name="currentLocation"
+            value="book.data.currentLocation"
+            search-method="location.methods.asyncSearch('name', param)"
+            field="name"
+            authorize-add="true"
+            post-method="location.methods.asyncPost(value, 'name')">
+        </gumga-many-to-one>
+    </div>
 
-	<div gumga-form-class="publishingHouse">
-		<label gumga-translate-tag="book.publishingHouse">publishingHouse</label>
-	    <gumga-many-to-one
-	            name="publishingHouse"
-	            value="book.data.publishingHouse"
-	            search-method="publishinghouse.methods.asyncSearch('name', param)"
-	            field="name"
-	            authorize-add="true"
-	            post-method="publishinghouse.methods.asyncPost(value, 'name')">
-	    </gumga-many-to-one>
-	</div>
 
-		
+    <div gumga-form-class="title">
+        <label gumga-translate-tag="book.title">title</label>
+        <input gumga-error type="text" name="title" ng-model="book.data.title"  class="form-control" />
+    </div>		
+    <div gumga-form-class="isbn">
+        <label gumga-translate-tag="book.isbn">isbn</label>
+        <input gumga-error type="text" name="isbn" ng-model="book.data.isbn"  class="form-control" />
+    </div>		
+    <div gumga-form-class="pages">
+        <label gumga-translate-tag="book.pages">pages</label>
+        <input gumga-error type="text" name="pages" ng-model="book.data.pages"  class="form-control" />
+    </div>		
+    <div gumga-form-class="publicationYear">
+        <label gumga-translate-tag="book.publicationYear">publicationYear</label>
+        <p class="input-group">
+            <input type="text" name="publicationYear" class="form-control"  uib-datepicker-popup="dd/MM/yyyy" ng-model="book.data.publicationYear" is-open="openedPublicationYear" ng-click="openedPublicationYear = !openedPublicationYear" close-text="Close" />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="openpublicationYear()">
+                    <i class="glyphicon glyphicon-calendar"></i>
+                </button>
+            </span>
+        </p>
+    </div>		
+    <div gumga-form-class="editionNumber">
+        <label gumga-translate-tag="book.editionNumber">editionNumber</label>
+        <input gumga-error type="text" name="editionNumber" ng-model="book.data.editionNumber"  class="form-control" />
+    </div>		
+
+    <div gumga-form-class="publishingHouse">
+        <label gumga-translate-tag="book.publishingHouse">publishingHouse</label>
+        <gumga-many-to-one
+            name="publishingHouse"
+            value="book.data.publishingHouse"
+            search-method="publishinghouse.methods.asyncSearch('name', param)"
+            field="name"
+            authorize-add="true"
+            post-method="publishinghouse.methods.asyncPost(value, 'name')">
+        </gumga-many-to-one>
+    </div>
+
+
 
     <div class="col-md-6">
         <label for="author" gumga-translate-tag="author.title"></label>
     </div>
-    
+
     <div class="col-md-6">
         <label for="book.author" gumga-translate-tag="book.author"></label>
     </div>
 
-	<div class="full-width-without-padding">
-	    <gumga-many-to-many 
-	            left-list="author.data" 
-	            right-list="book.data.author" 
-	            left-search="author.methods.asyncSearch('name', param)"
-	            filter-parameters="name"
-	            post-method="author.methods.save(value)"
-	            authorize-add="true">
-	        <left-field>{{$value.name}}</left-field>
-	        <right-field>{{$value.name}}</right-field>
-	    </gumga-many-to-many>
-	</div>
-	
-		
+    <div class="full-width-without-padding">
+        <gumga-many-to-many 
+            left-list="author.data" 
+            right-list="book.data.author" 
+            left-search="author.methods.asyncSearch('name', param)"
+            filter-parameters="name"
+            post-method="author.methods.save(value)"
+            authorize-add="true"
+            
+            text-left="Listando {{$value}} {{$value > 1 ? 'itens': 'item'}}"
+            text-right="Listando {{$value}} {{$value > 1 ? 'itens': 'item'}}"
+            text-heading-left="Disponíveis"
+            text-heading-right="Autores selecionados"
+            text-moveall-left="Mover todos para direita"
+            text-moveall-right="Mover todos para esquerda"
+            text-left-empty="Lista está vazia"
+            text-right-empty="Lista está vazia"
+            text-right-placeholder="Filtrar"
+            text-left-placeholder="Filtrar"
+            
+            >
+            <left-field>{{$value.name}}</left-field>
+            <right-field>{{$value.name}}</right-field>
+        </gumga-many-to-many>
+    </div>
+
+
 
     <div class="col-md-6">
         <label for="subjects" gumga-translate-tag="subject.title"></label>
     </div>
-    
+
     <div class="col-md-6">
         <label for="book.subjects" gumga-translate-tag="book.subjects"></label>
     </div>
 
-	<div class="full-width-without-padding">
-	    <gumga-many-to-many 
-	            left-list="subject.data" 
-	            right-list="book.data.subjects" 
-	            left-search="subject.methods.asyncSearch('description', param)"
-	            filter-parameters="description"
-	            post-method="subject.methods.save(value)"
-	            authorize-add="false"
-				
-				text-left="Listando {{$value}} {{$value > 1 ? 'itens': 'item'}}"
-                text-right="Listando {{$value}} {{$value > 1 ? 'itens': 'item'}}"
-                text-heading-left=""
-                text-heading-right="Gêneros selecionados"
-                text-moveall-left="Mover todos para direita"
-                text-moveall-right="Mover todos para esquerda"
-                text-left-empty="Lista está vazia"
-                text-right-empty="Lista está vazia"
-                text-right-placeholder="Filtrar"
-                text-left-placeholder="Filtrar"
-				
-				>
-	        <left-field>{{$value.description}}</left-field>
-	        <right-field>{{$value.description}}</right-field>
-	    </gumga-many-to-many>
-	</div>
-	
+    <div class="full-width-without-padding">
+        <gumga-many-to-many 
+            left-list="subject.data" 
+            right-list="book.data.subjects" 
+            left-search="subject.methods.asyncSearch('description', param)"
+            filter-parameters="description"
+            post-method="subject.methods.save(value)"
+            authorize-add="false"
+
+            text-left="Listando {{$value}} {{$value > 1 ? 'itens': 'item'}}"
+            text-right="Listando {{$value}} {{$value > 1 ? 'itens': 'item'}}"
+            text-heading-left="Disponíveis"
+            text-heading-right="Gêneros selecionados"
+            text-moveall-left="Mover todos para direita"
+            text-moveall-right="Mover todos para esquerda"
+            text-left-empty="Lista está vazia"
+            text-right-empty="Lista está vazia"
+            text-right-placeholder="Filtrar"
+            text-left-placeholder="Filtrar"
+
+            >
+            <left-field>{{$value.description}}</left-field>
+            <right-field>{{$value.description}}</right-field>
+        </gumga-many-to-many>
+    </div>
+
     <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
     <gumga-form-buttons
-            back="book.list"
-            submit="book.methods.put(book.data)"
-            position="right"
-            valid="BookForm.$valid"
-            confirm-dirty="true"
-            continue="continue">
+        back="book.list"
+        submit="book.methods.put(book.data)"
+        position="right"
+        valid="BookForm.$valid"
+        confirm-dirty="true"
+        continue="continue">
     </gumga-form-buttons>    
 </form>

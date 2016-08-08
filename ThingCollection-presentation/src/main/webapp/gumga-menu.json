@@ -15,15 +15,7 @@
         "imageUrl": "",
         "imageWidth": "",
         "imageHeight": "",
-        "filhos": [
-            {
-                "label": " Inserir ",
-                "URL": "publishinghouse.insert",
-                "key": "CRUD-PublishingHouse",
-                "icon": "glyphicon glyphicon-user",
-                "filhos": []
-            }
-        ]
+        "filhos": []
     },
     {
         "label": "Book",
@@ -34,34 +26,18 @@
         "imageUrl": "",
         "imageWidth": "",
         "imageHeight": "",
-        "filhos": [
-            {
-                "label": " Inserir ",
-                "URL": "book.insert",
-                "key": "CRUD-Book",
-                "icon": "glyphicon glyphicon-user",
-                "filhos": []
-            }
-        ]
+        "filhos": []
     },
     {
-        "label": "Author",
-        "URL": "author.list",
+        "label": "Subject",
+        "URL": "subject.list",
         "key": "CRUD-Author",
         "icon": "glyphicon glyphicon-user",
         "icon_color": "",
         "imageUrl": "",
         "imageWidth": "",
         "imageHeight": "",
-        "filhos": [
-            {
-                "label": " Inserir ",
-                "URL": "author.insert",
-                "key": "CRUD-Author",
-                "icon": "glyphicon glyphicon-user",
-                "filhos": []
-            }
-        ]
+        "filhos": []
     },
     {
         "label": "Movement",
@@ -72,15 +48,7 @@
         "imageUrl": "",
         "imageWidth": "",
         "imageHeight": "",
-        "filhos": [
-            {
-                "label": " Inserir ",
-                "URL": "movement.insert",
-                "key": "CRUD-Movement",
-                "icon": "glyphicon glyphicon-user",
-                "filhos": []
-            }
-        ]
+        "filhos": []
     },
     {
         "label": "People",
@@ -91,15 +59,7 @@
         "imageUrl": "",
         "imageWidth": "",
         "imageHeight": "",
-        "filhos": [
-            {
-                "label": " Inserir ",
-                "URL": "people.insert",
-                "key": "CRUD-People",
-                "icon": "glyphicon glyphicon-user",
-                "filhos": []
-            }
-        ]
+        "filhos": []
     },
     {
         "label": "Reservation",
@@ -110,15 +70,7 @@
         "imageUrl": "",
         "imageWidth": "",
         "imageHeight": "",
-        "filhos": [
-            {
-                "label": " Inserir ",
-                "URL": "reservation.insert",
-                "key": "CRUD-Reservation",
-                "icon": "glyphicon glyphicon-user",
-                "filhos": []
-            }
-        ]
+        "filhos": []
     },
     {
         "label": "Acessory",
@@ -129,15 +81,7 @@
         "imageUrl": "",
         "imageWidth": "",
         "imageHeight": "",
-        "filhos": [
-            {
-                "label": " Inserir ",
-                "URL": "acessory.insert",
-                "key": "CRUD-Acessory",
-                "icon": "glyphicon glyphicon-user",
-                "filhos": []
-            }
-        ]
+        "filhos": []
     },
     {
         "label": "Location",
@@ -148,15 +92,7 @@
         "imageUrl": "",
         "imageWidth": "",
         "imageHeight": "",
-        "filhos": [
-            {
-                "label": " Inserir ",
-                "URL": "location.insert",
-                "key": "CRUD-Location",
-                "icon": "glyphicon glyphicon-user",
-                "filhos": []
-            }
-        ]
+        "filhos": []
     },
     {
         "label": "configuration",

@@ -1,0 +1,12 @@
+{
+    "elements": {
+        "gumga-errors": {},
+        "gumga-nav": {},
+        "gumga-one-to-many": {},
+        "gumga-menu": {}
+    },
+    "attributes": {
+        "gumga-translate-tag": {},
+        "gumga-form-class": {}
+    }
+}

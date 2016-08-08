@@ -20,7 +20,7 @@ subgraph clusterbr_com_gumga_thingcollection_domain_model
 label="br.com.gumga.thingcollection.domain.model";
 Contact [label = "{Contact|version:Integer\ldescription:String\lphone:String\l|}"]
 Author [label = "{Author||}"]
-People [label = "{People|version:Integer\lname:String\ldateBirth:Date\lemail:String\lwebsite:String\lcontact:List\laddress:List\l|}"]
+People [label = "{People|version:Integer\lname:String\ldateBirth:Date\lemail:String\lwebsite:String\lcontact:List\laddress:List\l|getType:String\l}"]
 Book [label = "{Book|title:String\lisbn:String\lpages:int\lpublicationYear:Date\leditionNumber:String\lpublishingHouse:PublishingHouse\lauthor:List\lsubjects:List\l|}"]
 Movement [label = "{Movement|version:Integer\loutputDate:Date\lthing:Thing\l|}"]
 Address [label = "{Address|version:Integer\ldescription:String\laddress:GumgaAddress\l|}"]

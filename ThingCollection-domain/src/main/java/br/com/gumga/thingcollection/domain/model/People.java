@@ -1,5 +1,6 @@
 package br.com.gumga.thingcollection.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
 import gumga.framework.domain.GumgaModel; //TODO RETIRAR OS IMPORTS DESNECESSÁRIOS
 import gumga.framework.domain.GumgaMultitenancy;
 import java.io.Serializable;
@@ -13,12 +14,18 @@ import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.Indexed;
 import org.hibernate.envers.Audited;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
 @GumgaMultitenancy
 @SequenceGenerator(name = GumgaModel.SEQ_NAME, sequenceName = "SEQ_People")
 //@Indexed
 @Audited
 @Entity
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "type")
+@JsonSubTypes({
+                      @JsonSubTypes.Type(value = Author.class, name = "Author"),
+              })
 public class People extends GumgaModel<Long> {
 
     @Version
@@ -82,7 +89,13 @@ public class People extends GumgaModel<Long> {
     public void setAddress(List<Address> address) {
         this.address = address;
     }
-
+    
+    @JsonGetter
+    public String getType() {
+        return this.getClass().getSimpleName();
+    }
+    
+    
     
 
 }

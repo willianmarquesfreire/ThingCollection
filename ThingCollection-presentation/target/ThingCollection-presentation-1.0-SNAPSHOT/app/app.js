@@ -51,7 +51,6 @@ define(function(require) {
         '<gumga-nav></gumga-nav>',
         '<gumga-menu menu-url="gumga-menu.json" keys-url="keys.json" image="./resources/images/gumga.png"></gumga-menu>',
         'oi<div class="gumga-container">',
-        '<gumga-multi-entity-search data="multi.search"></gumga-multi-entity-search>',
         '</div>'
       ];
 

@@ -49,3 +49,7 @@ table {
 .uib-datepicker-popup.dropdown-menu  {
 	width: auto;
 }
+/** OBS ícone barra gumga menu ocultado*/
+#navbar span.glyphicon-search{
+    display : none;
+}

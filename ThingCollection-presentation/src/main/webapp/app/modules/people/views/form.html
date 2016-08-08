@@ -1,8 +1,8 @@
 <form name="PeopleForm" gumga-form novalidate>
 		
-	<div gumga-form-class="name">
+	<div gumga-form-class="nome">
 		<label gumga-translate-tag="people.name">name</label>
-		<input gumga-error type="text" name="name" ng-model="people.data.name"  class="form-control" />
+		<input gumga-error type="text" name="nome" ng-model="people.data.name"  class="form-control" />
 	</div>		
 	<div gumga-form-class="dateBirth">
 		<label gumga-translate-tag="people.dateBirth">dateBirth</label>
@@ -23,6 +23,13 @@
 		<label gumga-translate-tag="people.website">website</label>
 		<input gumga-error type="text" name="website" ng-model="people.data.website"  class="form-control" />
 	</div>		
+    <div gumga-form-class="type">
+        <label gumga-translate-tag="people.type">Type</label>
+        <select name="type" ng-model="people.data.type" class="form-control">
+            <option value="People">Pessoa</option>
+            <option value="Author">Autor</option>
+        </select>
+    </div>
 
 	<div class="full-width-without-padding">
 	    <label for="contact" gumga-translate-tag="people.contact"></label>

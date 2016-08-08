@@ -13,11 +13,11 @@
         "insert": "Inserir Coisa"
     },
     "thing": {
-        "title": "Objeto",
-        "menulabel": "Objeto",
-        "edit": "Editar Objeto",
-        "insert": "Inserir Objeto",
-        "list": "Consulta Objeto",
+        "title": "Coisa",
+        "menulabel": "Coisa",
+        "edit": "Editar Coisa",
+        "insert": "Inserir Coisa",
+        "list": "Consulta Coisa",
         "id": "id",
         "description": "Descrição",
         "currentlocation": "Localização Atual"
@@ -29,7 +29,7 @@
         "insert": "Inserir Localização",
         "list": "Consulta Localização",
         "id": "id",
-        "name": "Name",
+        "name": "Nome",
         "gps": "Localização"
     },
     "acessory": {
@@ -42,7 +42,7 @@
         "description": "Descrição",
         "currentlocation": "Localização Atual",
         "description": "Descrição",
-        "amount": "Qauntidade"
+        "amount": "Quantidade"
     },
     "book": {
         "title": "Livros",
@@ -58,7 +58,10 @@
         "editionnumber": "N° de edição",
         "description": "Descrição",
         "currentLocation": "Localização Atual",
-        "publishingHouse": "Editora"
+        "publishingHouse": "Editora",
+        "author": "Autores",
+        "subject.title": "Gênero",
+        "subjects": "Gêneros"
     },
     "reservation": {
         "title": "Reserva",
@@ -68,7 +71,8 @@
         "list": "Consulta Reserva",
         "id": "id",
         "outputdate": "Data de Saída",
-        "expirationdate": "Data Limite"
+        "expirationdate": "Data Limite",
+        "thing": "Coisa"
     },
     "people": {
         "title": "Pessoa",
@@ -83,7 +87,9 @@
         "website": "Website",
         "contact": "Contato",
         "address": "Endereço",
-        "description": "Descrição"
+        "description": "Descrição",
+        "phone": "Telefone",
+        "type": "Tipo"
     },
     "contact": {
         "title": "Contato",
@@ -102,7 +108,8 @@
         "insert": "Inserir Movimento",
         "list": "Consulta Movimento",
         "id": "id",
-        "outputdate": "Data de Saída"
+        "outputdate": "Data de Saída",
+        "thing": "Coisa"
     },
     "author": {
         "title": "Autor",
@@ -115,7 +122,9 @@
         "datebirth": "Data de Aniversário",
         "email": "E-mail",
         "website": "Website",
-        "subjects": "Assuntos"
+        "subjects": "Assuntos",
+        "contact": "Contato",
+        "address": "Endereço"
     },
     "publishinghouse": {
         "title": "Editora",
@@ -138,6 +147,17 @@
         "outputdate": "Data de Saída",
         "origin": "Origem",
         "destination": "Destino"
+    },
+    "subject": {
+        "title": "Gênero",
+        "menulabel": "Gênero",
+        "edit": "Editar Gênero",
+        "insert": "Inserir Gênero",
+        "list": "Consulta Gênero",
+        "id": "id",
+        "name": "Name",
+        "gps": "Localização",
+        "description": "Descrição"
     },
     "address": {
         "title": "Endereço",
@@ -192,6 +212,10 @@
     "gumgatagdefinition": {
         "name": "Nome",
         "menuLabel": "Tags"
+    },
+    "gumga": {
+        "latitude": "Latitude",
+        "longitude": "Longitude"
     },
     "configuration": {
         "menulabel": "Configurações",
