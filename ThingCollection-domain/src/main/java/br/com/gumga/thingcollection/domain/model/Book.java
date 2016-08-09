@@ -29,7 +29,7 @@ public class Book extends Thing {
     private String editionNumber;
     @ManyToOne
     private PublishingHouse publishingHouse;
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     private List<Author> author;
     @ManyToMany
     private List<Subject> subjects;

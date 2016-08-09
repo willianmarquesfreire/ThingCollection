@@ -1,11 +1,17 @@
 {
     "elements": {
         "gumga-errors": {},
+        "gumga-form-buttons": {},
         "gumga-nav": {},
         "gumga-one-to-many": {},
-        "gumga-menu": {}
+        "left-field": {},
+        "gumga-menu": {},
+        "right-field": {},
+        "gumga-many-to-many": {},
+        "gumga-many-to-one": {}
     },
     "attributes": {
+        "name": {},
         "gumga-translate-tag": {},
         "gumga-form-class": {}
     }

@@ -2,6 +2,8 @@ package br.com.gumga.thingcollection.api;
 
 import br.com.gumga.thingcollection.application.service.BookService;
 import br.com.gumga.thingcollection.domain.model.Book;
+import com.wordnik.swagger.annotations.ApiOperation;
+import gumga.framework.annotations.GumgaSwagger;
 import gumga.framework.application.GumgaService;
 import gumga.framework.presentation.GumgaAPI;
 
@@ -26,12 +28,34 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 @RequestMapping("/api/book")
 public class BookAPI extends GumgaAPI<Book, Long> {
-
+    
+    @Autowired
+    private BookService bookService;
 
     @Autowired
-    public BookAPI(GumgaService<Book, Long> service) {
+    public BookAPI(GumgaService<Book, Long> service) {    
         super(service);
     }
+
+//    @Override
+//    @GumgaSwagger
+//    @Transactional
+//    @ApiOperation(value = "load", notes = "Carrega entidade pelo id informado.")
+//    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+//    public Book load(Long id) {
+//        return super.load(id); //To change body of generated methods, choose Tools | Templates.
+//    }
+    
+    
+    
+    
+    
+    @RequestMapping(value = "/bookid/{id}")
+    public Book returnBook(@PathVariable long id) {
+        return bookService.loadBookFat(id);
+    }
+    
+    
 
 
 }

@@ -29,8 +29,8 @@ public class BookService extends GumgaService<Book, Long> {
 		Book obj = repository.findOne(id);	
 		
 		Hibernate.initialize(obj.getAuthor());
-		Hibernate.initialize(obj.getAuthor());
-		Hibernate.initialize(obj.getSubjects());
+                System.out.println("aquiiiiiiiiiiiii");
+                System.out.println("-----------> " + obj.getAuthor().size());
 		
 		
 		return obj;
