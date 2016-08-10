@@ -37,14 +37,13 @@ public class BookAPI extends GumgaAPI<Book, Long> {
         super(service);
     }
 
-//    @Override
-//    @GumgaSwagger
-//    @Transactional
-//    @ApiOperation(value = "load", notes = "Carrega entidade pelo id informado.")
-//    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-//    public Book load(Long id) {
-//        return super.load(id); //To change body of generated methods, choose Tools | Templates.
-//    }
+    @Override
+    @Transactional
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public Book load(@PathVariable Long id) {
+        System.out.println("aquuuuuuuuuuuuuuuu");
+        return ((BookService) service).loadBookFat(id);
+    }
     
     
     
